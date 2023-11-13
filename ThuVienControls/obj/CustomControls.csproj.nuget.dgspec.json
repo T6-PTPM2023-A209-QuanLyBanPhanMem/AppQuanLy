@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj": {}
+  },
+  "projects": {
+    "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj",
+        "projectName": "CustomControls",
+        "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj",
+        "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "FirebaseStorage.net": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "Krypton.Toolkit": {
+              "target": "Package",
+              "version": "[70.22.11.312, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
