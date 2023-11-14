@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[1.0.3, )"
             },
+            "IronXL.Excel": {
+              "target": "Package",
+              "version": "[2023.11.12, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[5.1.1, )"

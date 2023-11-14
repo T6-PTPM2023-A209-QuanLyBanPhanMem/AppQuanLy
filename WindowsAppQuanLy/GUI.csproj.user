@@ -28,7 +28,7 @@
     <Compile Update="FormTheLoai.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormTongQuan.cs">
+    <Compile Update="FormHeThong.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -17,20 +17,21 @@ namespace WindowsAppQuanLy.GUI
         public FormMain()
         {
             InitializeComponent();
-            InitEvents();
 
-            this.Load += FormMain_Load;
-        }
-
-        // Gán event cho các control (Chỉ dùng một lần khi load form nếu không các event sẽ bị lặp lại)
-        public void InitEvents()
-        {
             this.btnKey.Click += BtnTongQuan_Click;
             this.btnTaiKhoan.Click += BtnTaiKhoan_Click;
             this.btnNPH.Click += BtnNPH_Click;
             this.btnTheLoai.Click += BtnTheLoai_Click;
             this.btnSanPham.Click += BtnSanPham_Click;
             this.btnHoaDon.Click += BtnHoaDon_Click;
+            this.btnHeThong.Click += BtnHeThong_Click;
+
+            this.Load += FormMain_Load;
+        }
+
+        private void BtnHeThong_Click(object sender, EventArgs e)
+        {
+            Program.DisplayChildForm(Program.formHeThong);
         }
 
         private void BtnHoaDon_Click(object sender, EventArgs e)

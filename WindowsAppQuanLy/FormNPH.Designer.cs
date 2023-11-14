@@ -219,7 +219,6 @@ namespace WindowsAppQuanLy.GUI
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtSoSanPham.StateCommon.Border.Rounding = 25F;
             this.txtSoSanPham.TabIndex = 0;
-            this.txtSoSanPham.Text = "roundTextBox3";
             // 
             // txtGiaTriTonKhoa
             // 
@@ -233,7 +232,6 @@ namespace WindowsAppQuanLy.GUI
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtGiaTriTonKhoa.StateCommon.Border.Rounding = 25F;
             this.txtGiaTriTonKhoa.TabIndex = 1;
-            this.txtGiaTriTonKhoa.Text = "roundTextBox4";
             // 
             // txtTongDoanhThu
             // 
@@ -247,7 +245,6 @@ namespace WindowsAppQuanLy.GUI
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtTongDoanhThu.StateCommon.Border.Rounding = 25F;
             this.txtTongDoanhThu.TabIndex = 2;
-            this.txtTongDoanhThu.Text = "roundTextBox5";
             // 
             // label3
             // 
@@ -323,7 +320,6 @@ namespace WindowsAppQuanLy.GUI
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtMaNPH.StateCommon.Border.Rounding = 25F;
             this.txtMaNPH.TabIndex = 0;
-            this.txtMaNPH.Text = "roundTextBox1";
             // 
             // txtTenNPH
             // 
@@ -338,7 +334,6 @@ namespace WindowsAppQuanLy.GUI
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
             this.txtTenNPH.StateCommon.Border.Rounding = 25F;
             this.txtTenNPH.TabIndex = 1;
-            this.txtTenNPH.Text = "roundTextBox2";
             // 
             // label1
             // 

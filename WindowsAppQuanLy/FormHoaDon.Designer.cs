@@ -45,7 +45,6 @@ namespace WindowsAppQuanLy.GUI
             this.HD_TenPM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HD_SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HD_ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.txtThoiGianLap = new ThuVienControls.RoundTextBox();
             this.txtMaHD = new ThuVienControls.RoundTextBox();
@@ -70,7 +69,6 @@ namespace WindowsAppQuanLy.GUI
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.groupBox2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -217,28 +215,10 @@ namespace WindowsAppQuanLy.GUI
             this.HD_ThanhTien.Name = "HD_ThanhTien";
             this.HD_ThanhTien.ReadOnly = true;
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(782, 656);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 5;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(774, 254);
-            this.tableLayoutPanel2.TabIndex = 4;
-            // 
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 7;
+            this.tableLayoutPanel1.SetColumnSpan(this.tableLayoutPanel3, 2);
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -264,16 +244,16 @@ namespace WindowsAppQuanLy.GUI
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(773, 254);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1553, 254);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // txtThoiGianLap
             // 
             this.tableLayoutPanel3.SetColumnSpan(this.txtThoiGianLap, 4);
             this.txtThoiGianLap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtThoiGianLap.Location = new System.Drawing.Point(196, 130);
+            this.txtThoiGianLap.Location = new System.Drawing.Point(274, 130);
             this.txtThoiGianLap.Name = "txtThoiGianLap";
-            this.txtThoiGianLap.Size = new System.Drawing.Size(508, 39);
+            this.txtThoiGianLap.Size = new System.Drawing.Size(1132, 39);
             this.txtThoiGianLap.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -284,9 +264,9 @@ namespace WindowsAppQuanLy.GUI
             // 
             this.tableLayoutPanel3.SetColumnSpan(this.txtMaHD, 4);
             this.txtMaHD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtMaHD.Location = new System.Drawing.Point(196, 50);
+            this.txtMaHD.Location = new System.Drawing.Point(274, 50);
             this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.Size = new System.Drawing.Size(508, 39);
+            this.txtMaHD.Size = new System.Drawing.Size(1132, 39);
             this.txtMaHD.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -297,9 +277,9 @@ namespace WindowsAppQuanLy.GUI
             // 
             this.tableLayoutPanel3.SetColumnSpan(this.txtTenTK, 4);
             this.txtTenTK.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTenTK.Location = new System.Drawing.Point(196, 90);
+            this.txtTenTK.Location = new System.Drawing.Point(274, 90);
             this.txtTenTK.Name = "txtTenTK";
-            this.txtTenTK.Size = new System.Drawing.Size(508, 39);
+            this.txtTenTK.Size = new System.Drawing.Size(1132, 39);
             this.txtTenTK.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -309,7 +289,7 @@ namespace WindowsAppQuanLy.GUI
             // kryptonLabel1
             // 
             this.kryptonLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel1.Location = new System.Drawing.Point(67, 50);
+            this.kryptonLabel1.Location = new System.Drawing.Point(145, 50);
             this.kryptonLabel1.Name = "kryptonLabel1";
             this.kryptonLabel1.Size = new System.Drawing.Size(123, 34);
             this.kryptonLabel1.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -319,7 +299,7 @@ namespace WindowsAppQuanLy.GUI
             // kryptonLabel2
             // 
             this.kryptonLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel2.Location = new System.Drawing.Point(67, 90);
+            this.kryptonLabel2.Location = new System.Drawing.Point(145, 90);
             this.kryptonLabel2.Name = "kryptonLabel2";
             this.kryptonLabel2.Size = new System.Drawing.Size(123, 34);
             this.kryptonLabel2.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -329,7 +309,7 @@ namespace WindowsAppQuanLy.GUI
             // lb1
             // 
             this.lb1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lb1.Location = new System.Drawing.Point(67, 130);
+            this.lb1.Location = new System.Drawing.Point(145, 130);
             this.lb1.Name = "lb1";
             this.lb1.Size = new System.Drawing.Size(123, 34);
             this.lb1.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -339,7 +319,7 @@ namespace WindowsAppQuanLy.GUI
             // kryptonLabel7
             // 
             this.kryptonLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.kryptonLabel7.Location = new System.Drawing.Point(67, 170);
+            this.kryptonLabel7.Location = new System.Drawing.Point(145, 170);
             this.kryptonLabel7.Name = "kryptonLabel7";
             this.kryptonLabel7.Size = new System.Drawing.Size(123, 34);
             this.kryptonLabel7.StateCommon.ShortText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -350,9 +330,9 @@ namespace WindowsAppQuanLy.GUI
             // 
             this.tableLayoutPanel3.SetColumnSpan(this.txtThanhTien, 4);
             this.txtThanhTien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtThanhTien.Location = new System.Drawing.Point(196, 170);
+            this.txtThanhTien.Location = new System.Drawing.Point(274, 170);
             this.txtThanhTien.Name = "txtThanhTien";
-            this.txtThanhTien.Size = new System.Drawing.Size(508, 39);
+            this.txtThanhTien.Size = new System.Drawing.Size(1132, 39);
             this.txtThanhTien.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -385,7 +365,6 @@ namespace WindowsAppQuanLy.GUI
         private ThuVienControls.GeneralDataGridView dgvHoaDon;
         private GroupBox groupBox2;
         private ThuVienControls.GeneralDataGridView dgvCTHD;
-        private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel3;
         private ThuVienControls.RoundTextBox txtMaHD;
         private ThuVienControls.RoundTextBox txtTenTK;

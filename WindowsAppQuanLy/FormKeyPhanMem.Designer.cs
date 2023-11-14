@@ -31,8 +31,12 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvPhanMem = new ThuVienControls.GeneralDataGridView();
+            this.TK_MAPM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TK_TENPM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvCTPM = new ThuVienControls.GeneralDataGridView();
+            this.KEY_MaKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KEY_TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.txtSoSanPham = new ThuVienControls.RoundTextBox();
             this.txtGiaTriTonKhoa = new ThuVienControls.RoundTextBox();
@@ -46,12 +50,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnXoa = new ThuVienControls.RoundButton();
             this.btnThem = new ThuVienControls.RoundButton();
-            this.TK_MAPM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TK_TENPM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KEY_MaKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KEY_TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhanMem)).BeginInit();
@@ -114,6 +113,20 @@
             this.dgvPhanMem.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dgvPhanMem.TabIndex = 0;
             // 
+            // TK_MAPM
+            // 
+            this.TK_MAPM.DataPropertyName = "MaPM";
+            this.TK_MAPM.HeaderText = "Mã phần mềm";
+            this.TK_MAPM.Name = "TK_MAPM";
+            this.TK_MAPM.ReadOnly = true;
+            // 
+            // TK_TENPM
+            // 
+            this.TK_TENPM.DataPropertyName = "TenPM";
+            this.TK_TENPM.HeaderText = "Tên phần mềm";
+            this.TK_TENPM.Name = "TK_TENPM";
+            this.TK_TENPM.ReadOnly = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dgvCTPM);
@@ -147,6 +160,20 @@
             this.dgvCTPM.StateCommon.Background.Color1 = System.Drawing.Color.Azure;
             this.dgvCTPM.StateCommon.BackStyle = Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dgvCTPM.TabIndex = 0;
+            // 
+            // KEY_MaKey
+            // 
+            this.KEY_MaKey.DataPropertyName = "MaKey";
+            this.KEY_MaKey.HeaderText = "Mã chi tiết";
+            this.KEY_MaKey.Name = "KEY_MaKey";
+            this.KEY_MaKey.ReadOnly = true;
+            // 
+            // KEY_TinhTrang
+            // 
+            this.KEY_TinhTrang.DataPropertyName = "TinhTrang";
+            this.KEY_TinhTrang.HeaderText = "Tình trạng";
+            this.KEY_TinhTrang.Name = "KEY_TinhTrang";
+            this.KEY_TinhTrang.ReadOnly = true;
             // 
             // tableLayoutPanel2
             // 
@@ -220,7 +247,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(123, 39);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Số phần mềm";
+            this.label3.Text = "Số key phần mềm";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -231,7 +258,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 39);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Giá trị tồn kho";
+            this.label4.Text = "Số tài khoản";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
@@ -242,7 +269,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(123, 39);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Tổng doanh thu";
+            this.label5.Text = "Tổng số chi tiết";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel3
@@ -320,7 +347,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 39);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Số lượng key";
+            this.label2.Text = "Số lượng key trong file";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel4
@@ -332,7 +359,6 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.btnXoa, 3, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnThem, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(49, 149);
@@ -342,51 +368,9 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(493, 59);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
-            // btnXoa
-            // 
-            this.btnXoa.CornerRoundingRadius = 25F;
-            this.btnXoa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnXoa.Location = new System.Drawing.Point(341, 13);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.OverrideDefault.Back.Color1 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.OverrideDefault.Back.Color2 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnXoa.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.btnXoa.OverrideFocus.Back.Color1 = System.Drawing.Color.White;
-            this.btnXoa.OverrideFocus.Back.Color2 = System.Drawing.Color.White;
-            this.btnXoa.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.Size = new System.Drawing.Size(111, 33);
-            this.btnXoa.StateCommon.Back.Color1 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StateCommon.Back.Color2 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnXoa.StateCommon.Border.Rounding = 25F;
-            this.btnXoa.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.btnXoa.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.StateNormal.Back.Color1 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StatePressed.Back.Color1 = System.Drawing.Color.White;
-            this.btnXoa.StatePressed.Back.Color2 = System.Drawing.Color.White;
-            this.btnXoa.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StateTracking.Back.Color1 = System.Drawing.Color.White;
-            this.btnXoa.StateTracking.Back.Color2 = System.Drawing.Color.White;
-            this.btnXoa.StateTracking.Border.Color1 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StateTracking.Border.Color2 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.btnXoa.StateTracking.Content.LongText.Color1 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StateTracking.Content.LongText.Color2 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
-            this.btnXoa.TabIndex = 23;
-            this.btnXoa.Values.Text = "Xoá";
-            // 
             // btnThem
             // 
+            this.tableLayoutPanel4.SetColumnSpan(this.btnThem, 3);
             this.btnThem.CornerRoundingRadius = 25F;
             this.btnThem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnThem.Location = new System.Drawing.Point(41, 13);
@@ -400,7 +384,7 @@
             this.btnThem.OverrideFocus.Back.Color2 = System.Drawing.Color.White;
             this.btnThem.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.DodgerBlue;
             this.btnThem.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
-            this.btnThem.Size = new System.Drawing.Size(111, 33);
+            this.btnThem.Size = new System.Drawing.Size(411, 33);
             this.btnThem.StateCommon.Back.Color1 = System.Drawing.Color.DodgerBlue;
             this.btnThem.StateCommon.Back.Color2 = System.Drawing.Color.DodgerBlue;
             this.btnThem.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -427,34 +411,6 @@
             this.btnThem.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
             this.btnThem.TabIndex = 24;
             this.btnThem.Values.Text = "Thêm";
-            // 
-            // TK_MAPM
-            // 
-            this.TK_MAPM.DataPropertyName = "MaPM";
-            this.TK_MAPM.HeaderText = "Mã phần mềm";
-            this.TK_MAPM.Name = "TK_MAPM";
-            this.TK_MAPM.ReadOnly = true;
-            // 
-            // TK_TENPM
-            // 
-            this.TK_TENPM.DataPropertyName = "TenPM";
-            this.TK_TENPM.HeaderText = "Tên phần mềm";
-            this.TK_TENPM.Name = "TK_TENPM";
-            this.TK_TENPM.ReadOnly = true;
-            // 
-            // KEY_MaKey
-            // 
-            this.KEY_MaKey.DataPropertyName = "MaKey";
-            this.KEY_MaKey.HeaderText = "Mã chi tiết";
-            this.KEY_MaKey.Name = "KEY_MaKey";
-            this.KEY_MaKey.ReadOnly = true;
-            // 
-            // KEY_TinhTrang
-            // 
-            this.KEY_TinhTrang.DataPropertyName = "TinhTrang";
-            this.KEY_TinhTrang.HeaderText = "Tình trạng";
-            this.KEY_TinhTrang.Name = "KEY_TinhTrang";
-            this.KEY_TinhTrang.ReadOnly = true;
             // 
             // FormKeyPhanMem
             // 
@@ -498,7 +454,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private ThuVienControls.RoundButton btnXoa;
         private ThuVienControls.RoundButton btnThem;
         private System.Windows.Forms.DataGridViewTextBoxColumn TK_MAPM;
         private System.Windows.Forms.DataGridViewTextBoxColumn TK_TENPM;
