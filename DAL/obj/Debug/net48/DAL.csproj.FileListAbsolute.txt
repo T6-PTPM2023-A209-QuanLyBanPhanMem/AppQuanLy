@@ -101,7 +101,6 @@ E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\obj\Debug
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\obj\Debug\net48\DAL.dll
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\obj\Debug\net48\DAL.pdb
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\obj\Debug\net48\Interop.Microsoft.Office.Core.dll
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\obj\Debug\net48\Interop.InteropExtensionLib.dll
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\obj\Debug\net48\DAL.csproj.ResolveComReference.cache
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\bin\Debug\net48\BitMiracle.LibTiff.NET.dll
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\bin\Debug\net48\IronSoftware.Abstractions.dll
@@ -123,3 +122,4 @@ E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\bin\Debug
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\bin\Debug\net48\SixLabors.ImageSharp.dll
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\bin\Debug\net48\SixLabors.ImageSharp.Drawing.dll
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\bin\Debug\net48\System.Text.Encoding.CodePages.dll
+E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\DAL\obj\Debug\net48\DAL.sourcelink.json

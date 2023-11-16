@@ -14,13 +14,13 @@ namespace WindowsAppQuanLy
         public static FormConfig formConfig;
         public static FormMain formMain;
         public static FormTaiKhoan formTaiKhoan;
-        public static FormHeThong formTongQuan;
+        public static FormThongKe formTongQuan;
         public static FormNPH formNPH;
         public static FormTheLoai formTheLoai;
         public static FormPhanMem formSanPham;
         public static FormKeyPhanMem formKeySanPham;
         public static FormHoaDon formHoaDon;
-        public static FormHeThong formHeThong;
+        public static FormThongKe formHeThong;
         public static LoadingScreen loadingScreen;
         /// <summary>
         ///  The main entry point for the application.
@@ -59,13 +59,13 @@ namespace WindowsAppQuanLy
             formDangNhap = new FormDangNhap();
             formMain = new FormMain();
             formTaiKhoan = new FormTaiKhoan(formMain);
-            formTongQuan = new FormHeThong(formMain);
+            formTongQuan = new FormThongKe(formMain);
             formNPH = new FormNPH(formMain);
             formTheLoai = new FormTheLoai(formMain);
             formSanPham = new FormPhanMem(formMain);
             formKeySanPham = new FormKeyPhanMem(formMain);
             formHoaDon = new FormHoaDon(formMain);
-            formHeThong = new FormHeThong(formMain);
+            formHeThong = new FormThongKe(formMain);
         }
     }
 }

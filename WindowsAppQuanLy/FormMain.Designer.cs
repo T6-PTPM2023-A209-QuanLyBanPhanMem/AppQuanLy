@@ -40,7 +40,8 @@ namespace WindowsAppQuanLy.GUI
             this.btnTaiKhoan = new System.Windows.Forms.Button();
             this.btnKey = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnHeThong = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
+            this.btnWeb = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,10 +65,10 @@ namespace WindowsAppQuanLy.GUI
             this.btnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnHoaDon.Location = new System.Drawing.Point(0, 312);
+            this.btnHoaDon.Location = new System.Drawing.Point(0, 273);
             this.btnHoaDon.Margin = new System.Windows.Forms.Padding(0);
             this.btnHoaDon.Name = "btnHoaDon";
-            this.btnHoaDon.Size = new System.Drawing.Size(171, 104);
+            this.btnHoaDon.Size = new System.Drawing.Size(171, 91);
             this.btnHoaDon.TabIndex = 5;
             this.btnHoaDon.Text = "Hóa đơn";
             this.btnHoaDon.UseVisualStyleBackColor = false;
@@ -83,7 +84,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnSanPham.Location = new System.Drawing.Point(0, 0);
             this.btnSanPham.Margin = new System.Windows.Forms.Padding(0);
             this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.Size = new System.Drawing.Size(171, 104);
+            this.btnSanPham.Size = new System.Drawing.Size(171, 91);
             this.btnSanPham.TabIndex = 4;
             this.btnSanPham.Text = "Phần mềm";
             this.btnSanPham.UseVisualStyleBackColor = false;
@@ -96,10 +97,10 @@ namespace WindowsAppQuanLy.GUI
             this.btnNPH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNPH.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnNPH.ForeColor = System.Drawing.Color.White;
-            this.btnNPH.Location = new System.Drawing.Point(0, 208);
+            this.btnNPH.Location = new System.Drawing.Point(0, 182);
             this.btnNPH.Margin = new System.Windows.Forms.Padding(0);
             this.btnNPH.Name = "btnNPH";
-            this.btnNPH.Size = new System.Drawing.Size(171, 104);
+            this.btnNPH.Size = new System.Drawing.Size(171, 91);
             this.btnNPH.TabIndex = 3;
             this.btnNPH.Text = "Nhà phát hành";
             this.btnNPH.UseVisualStyleBackColor = false;
@@ -112,10 +113,10 @@ namespace WindowsAppQuanLy.GUI
             this.btnTheLoai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTheLoai.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnTheLoai.ForeColor = System.Drawing.Color.White;
-            this.btnTheLoai.Location = new System.Drawing.Point(0, 104);
+            this.btnTheLoai.Location = new System.Drawing.Point(0, 91);
             this.btnTheLoai.Margin = new System.Windows.Forms.Padding(0);
             this.btnTheLoai.Name = "btnTheLoai";
-            this.btnTheLoai.Size = new System.Drawing.Size(171, 104);
+            this.btnTheLoai.Size = new System.Drawing.Size(171, 91);
             this.btnTheLoai.TabIndex = 2;
             this.btnTheLoai.Text = "Thể loại";
             this.btnTheLoai.UseVisualStyleBackColor = false;
@@ -128,10 +129,10 @@ namespace WindowsAppQuanLy.GUI
             this.btnTaiKhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaiKhoan.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.White;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 416);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 364);
             this.btnTaiKhoan.Margin = new System.Windows.Forms.Padding(0);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
-            this.btnTaiKhoan.Size = new System.Drawing.Size(171, 104);
+            this.btnTaiKhoan.Size = new System.Drawing.Size(171, 91);
             this.btnTaiKhoan.TabIndex = 1;
             this.btnTaiKhoan.Text = "Tài khoản";
             this.btnTaiKhoan.UseVisualStyleBackColor = false;
@@ -144,10 +145,10 @@ namespace WindowsAppQuanLy.GUI
             this.btnKey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnKey.ForeColor = System.Drawing.Color.White;
-            this.btnKey.Location = new System.Drawing.Point(0, 520);
+            this.btnKey.Location = new System.Drawing.Point(0, 455);
             this.btnKey.Margin = new System.Windows.Forms.Padding(0);
             this.btnKey.Name = "btnKey";
-            this.btnKey.Size = new System.Drawing.Size(171, 104);
+            this.btnKey.Size = new System.Drawing.Size(171, 91);
             this.btnKey.TabIndex = 0;
             this.btnKey.Text = "Key phần mềm";
             this.btnKey.UseVisualStyleBackColor = false;
@@ -156,7 +157,8 @@ namespace WindowsAppQuanLy.GUI
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.btnHeThong, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.btnWeb, 0, 7);
+            this.tableLayoutPanel1.Controls.Add(this.btnThongKe, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.btnSanPham, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnKey, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.btnTaiKhoan, 0, 4);
@@ -166,32 +168,49 @@ namespace WindowsAppQuanLy.GUI
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 7;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28531F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28816F));
+            this.tableLayoutPanel1.RowCount = 8;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49918F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49918F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49918F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49918F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49918F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.49918F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.50167F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.50328F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(171, 729);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // btnHeThong
+            // btnThongKe
             // 
-            this.btnHeThong.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnHeThong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHeThong.FlatAppearance.BorderSize = 0;
-            this.btnHeThong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHeThong.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnHeThong.ForeColor = System.Drawing.Color.White;
-            this.btnHeThong.Location = new System.Drawing.Point(0, 624);
-            this.btnHeThong.Margin = new System.Windows.Forms.Padding(0);
-            this.btnHeThong.Name = "btnHeThong";
-            this.btnHeThong.Size = new System.Drawing.Size(171, 105);
-            this.btnHeThong.TabIndex = 6;
-            this.btnHeThong.Text = "Hệ thống";
-            this.btnHeThong.UseVisualStyleBackColor = false;
+            this.btnThongKe.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnThongKe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnThongKe.FlatAppearance.BorderSize = 0;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Location = new System.Drawing.Point(0, 546);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(0);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(171, 91);
+            this.btnThongKe.TabIndex = 6;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.UseVisualStyleBackColor = false;
+            // 
+            // btnWeb
+            // 
+            this.btnWeb.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnWeb.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnWeb.FlatAppearance.BorderSize = 0;
+            this.btnWeb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWeb.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnWeb.ForeColor = System.Drawing.Color.White;
+            this.btnWeb.Location = new System.Drawing.Point(0, 637);
+            this.btnWeb.Margin = new System.Windows.Forms.Padding(0);
+            this.btnWeb.Name = "btnWeb";
+            this.btnWeb.Size = new System.Drawing.Size(171, 92);
+            this.btnWeb.TabIndex = 7;
+            this.btnWeb.Text = "Website";
+            this.btnWeb.UseVisualStyleBackColor = false;
             // 
             // FormMain
             // 
@@ -219,6 +238,7 @@ namespace WindowsAppQuanLy.GUI
         private Button btnNPH;
         private Button btnHoaDon;
         private TableLayoutPanel tableLayoutPanel1;
-        private Button btnHeThong;
+        private Button btnThongKe;
+        private Button btnWeb;
     }
 }

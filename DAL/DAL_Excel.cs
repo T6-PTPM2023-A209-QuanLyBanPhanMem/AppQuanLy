@@ -10,12 +10,12 @@ namespace DAL
 {
     public class DAL_Excel
     {
-        public static void xuatExcel()
+        public static void xuatExcel_PhanMem(string duongDan)
         {
-            List<PHANMEM> dsPhanMem = new DAL_PhanMem().Doc();
-
             WorkBook workBook = WorkBook.Create();
             WorkSheet workSheet = workBook.DefaultWorkSheet;
+
+            List<PHANMEM> dsPhanMem = new DAL_PhanMem().Doc();
 
             workSheet["A1"].Value = "Mã phần mềm";
             workSheet["B1"].Value = "Tên phần mềm";
@@ -25,6 +25,7 @@ namespace DAL
             workSheet["F1"].Value = "Số lượng tồn kho";
             workSheet["G1"].Value = "Đơn giá";
             workSheet["H1"].Value = "Tổng doanh thu";
+            workSheet["I1"].Value = "Đường dẫn hình ảnh";
 
             for (int i = 2; i <= dsPhanMem.Count + 1; i++)
             {
@@ -36,10 +37,11 @@ namespace DAL
                 workSheet["F" + i].Value = dsPhanMem[i - 2].SOLUONG;
                 workSheet["G" + i].Value = dsPhanMem[i - 2].DONGIA;
                 workSheet["H" + i].Value = dsPhanMem[i - 2].CTHDs.Sum(x => x.THANHTIEN);
+                workSheet["I" + i].Value = dsPhanMem[i - 2].HINHANH;
             }
 
             // Save Changes
-            workBook.SaveAs("test.xlsx");
+            workBook.SaveAs(duongDan + @"\DanhSachPhanMem.xlsx");
         }
     }
 }

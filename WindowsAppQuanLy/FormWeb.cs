@@ -1,5 +1,4 @@
-﻿using DAL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,15 +9,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ThuVienControls;
 
-namespace WindowsAppQuanLy.GUI
+namespace GUI
 {
-    public partial class FormHeThong : FormCon
+    public partial class FormWeb : FormCon
     {
-        public FormHeThong(Form form) : base(form)
+        public FormWeb()
         {
             InitializeComponent();
-
-            DAL_Excel.xuatExcel();
         }
     }
 }

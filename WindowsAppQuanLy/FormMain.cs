@@ -24,7 +24,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnTheLoai.Click += BtnTheLoai_Click;
             this.btnSanPham.Click += BtnSanPham_Click;
             this.btnHoaDon.Click += BtnHoaDon_Click;
-            this.btnHeThong.Click += BtnHeThong_Click;
+            this.btnThongKe.Click += BtnHeThong_Click;
 
             this.Load += FormMain_Load;
         }

@@ -93,3 +93,4 @@ E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\WindowsAppQua
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\WindowsAppQuanLy\bin\Debug\net48\SixLabors.ImageSharp.dll
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\WindowsAppQuanLy\bin\Debug\net48\SixLabors.ImageSharp.Drawing.dll
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\WindowsAppQuanLy\bin\Debug\net48\System.Text.Encoding.CodePages.dll
+E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\WindowsAppQuanLy\obj\Debug\net48\GUI.sourcelink.json

@@ -34,3 +34,4 @@ E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienContro
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.csproj.CopyComplete
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.dll
 E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.pdb
+E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.sourcelink.json
