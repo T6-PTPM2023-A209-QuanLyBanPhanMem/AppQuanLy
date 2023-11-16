@@ -30,12 +30,12 @@ namespace DAL
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void InsertCTHD(CTHD instance);
-    partial void UpdateCTHD(CTHD instance);
-    partial void DeleteCTHD(CTHD instance);
     partial void InsertTHUOCLOAIPM(THUOCLOAIPM instance);
     partial void UpdateTHUOCLOAIPM(THUOCLOAIPM instance);
     partial void DeleteTHUOCLOAIPM(THUOCLOAIPM instance);
+    partial void InsertCTHD(CTHD instance);
+    partial void UpdateCTHD(CTHD instance);
+    partial void DeleteCTHD(CTHD instance);
     partial void InsertCTHD_KEY(CTHD_KEY instance);
     partial void UpdateCTHD_KEY(CTHD_KEY instance);
     partial void DeleteCTHD_KEY(CTHD_KEY instance);
@@ -63,10 +63,13 @@ namespace DAL
     partial void InsertTHONGTINBOSUNG(THONGTINBOSUNG instance);
     partial void UpdateTHONGTINBOSUNG(THONGTINBOSUNG instance);
     partial void DeleteTHONGTINBOSUNG(THONGTINBOSUNG instance);
+    partial void InsertBanner(Banner instance);
+    partial void UpdateBanner(Banner instance);
+    partial void DeleteBanner(Banner instance);
     #endregion
 		
 		public DALDataContext() : 
-				base(global::DAL.Properties.Settings.Default.QL_CuaHangPhanMemConnectionString2, mappingSource)
+				base(global::DAL.Properties.Settings.Default.QL_CuaHangPhanMemConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
@@ -95,14 +98,6 @@ namespace DAL
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<CTHD> CTHDs
-		{
-			get
-			{
-				return this.GetTable<CTHD>();
-			}
-		}
-		
 		public System.Data.Linq.Table<THUOCLOAIPM> THUOCLOAIPMs
 		{
 			get
@@ -111,11 +106,27 @@ namespace DAL
 			}
 		}
 		
+		public System.Data.Linq.Table<CTHD> CTHDs
+		{
+			get
+			{
+				return this.GetTable<CTHD>();
+			}
+		}
+		
 		public System.Data.Linq.Table<CTHD_KEY> CTHD_KEYs
 		{
 			get
 			{
 				return this.GetTable<CTHD_KEY>();
+			}
+		}
+		
+		public System.Data.Linq.Table<DANHMUC> DANHMUCs
+		{
+			get
+			{
+				return this.GetTable<DANHMUC>();
 			}
 		}
 		
@@ -183,11 +194,179 @@ namespace DAL
 			}
 		}
 		
-		public System.Data.Linq.Table<DANHMUC> DANHMUCs
+		public System.Data.Linq.Table<Banner> Banners
 		{
 			get
 			{
-				return this.GetTable<DANHMUC>();
+				return this.GetTable<Banner>();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.THUOCLOAIPM")]
+	public partial class THUOCLOAIPM : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _MAPM;
+		
+		private int _MALOAI;
+		
+		private EntityRef<LOAIPHANMEM> _LOAIPHANMEM;
+		
+		private EntityRef<PHANMEM> _PHANMEM;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMAPMChanging(int value);
+    partial void OnMAPMChanged();
+    partial void OnMALOAIChanging(int value);
+    partial void OnMALOAIChanged();
+    #endregion
+		
+		public THUOCLOAIPM()
+		{
+			this._LOAIPHANMEM = default(EntityRef<LOAIPHANMEM>);
+			this._PHANMEM = default(EntityRef<PHANMEM>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAPM", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MAPM
+		{
+			get
+			{
+				return this._MAPM;
+			}
+			set
+			{
+				if ((this._MAPM != value))
+				{
+					if (this._PHANMEM.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMAPMChanging(value);
+					this.SendPropertyChanging();
+					this._MAPM = value;
+					this.SendPropertyChanged("MAPM");
+					this.OnMAPMChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MALOAI", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int MALOAI
+		{
+			get
+			{
+				return this._MALOAI;
+			}
+			set
+			{
+				if ((this._MALOAI != value))
+				{
+					if (this._LOAIPHANMEM.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMALOAIChanging(value);
+					this.SendPropertyChanging();
+					this._MALOAI = value;
+					this.SendPropertyChanged("MALOAI");
+					this.OnMALOAIChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAIPHANMEM_THUOCLOAIPM", Storage="_LOAIPHANMEM", ThisKey="MALOAI", OtherKey="MALOAI", IsForeignKey=true)]
+		public LOAIPHANMEM LOAIPHANMEM
+		{
+			get
+			{
+				return this._LOAIPHANMEM.Entity;
+			}
+			set
+			{
+				LOAIPHANMEM previousValue = this._LOAIPHANMEM.Entity;
+				if (((previousValue != value) 
+							|| (this._LOAIPHANMEM.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._LOAIPHANMEM.Entity = null;
+						previousValue.THUOCLOAIPMs.Remove(this);
+					}
+					this._LOAIPHANMEM.Entity = value;
+					if ((value != null))
+					{
+						value.THUOCLOAIPMs.Add(this);
+						this._MALOAI = value.MALOAI;
+					}
+					else
+					{
+						this._MALOAI = default(int);
+					}
+					this.SendPropertyChanged("LOAIPHANMEM");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHANMEM_THUOCLOAIPM", Storage="_PHANMEM", ThisKey="MAPM", OtherKey="MAPM", IsForeignKey=true)]
+		public PHANMEM PHANMEM
+		{
+			get
+			{
+				return this._PHANMEM.Entity;
+			}
+			set
+			{
+				PHANMEM previousValue = this._PHANMEM.Entity;
+				if (((previousValue != value) 
+							|| (this._PHANMEM.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._PHANMEM.Entity = null;
+						previousValue.THUOCLOAIPMs.Remove(this);
+					}
+					this._PHANMEM.Entity = value;
+					if ((value != null))
+					{
+						value.THUOCLOAIPMs.Add(this);
+						this._MAPM = value.MAPM;
+					}
+					else
+					{
+						this._MAPM = default(int);
+					}
+					this.SendPropertyChanged("PHANMEM");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -376,174 +555,6 @@ namespace DAL
 					if ((value != null))
 					{
 						value.CTHDs.Add(this);
-						this._MAPM = value.MAPM;
-					}
-					else
-					{
-						this._MAPM = default(int);
-					}
-					this.SendPropertyChanged("PHANMEM");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.THUOCLOAIPM")]
-	public partial class THUOCLOAIPM : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _MAPM;
-		
-		private int _MALOAI;
-		
-		private EntityRef<LOAIPHANMEM> _LOAIPHANMEM;
-		
-		private EntityRef<PHANMEM> _PHANMEM;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMAPMChanging(int value);
-    partial void OnMAPMChanged();
-    partial void OnMALOAIChanging(int value);
-    partial void OnMALOAIChanged();
-    #endregion
-		
-		public THUOCLOAIPM()
-		{
-			this._LOAIPHANMEM = default(EntityRef<LOAIPHANMEM>);
-			this._PHANMEM = default(EntityRef<PHANMEM>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MAPM", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int MAPM
-		{
-			get
-			{
-				return this._MAPM;
-			}
-			set
-			{
-				if ((this._MAPM != value))
-				{
-					if (this._PHANMEM.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnMAPMChanging(value);
-					this.SendPropertyChanging();
-					this._MAPM = value;
-					this.SendPropertyChanged("MAPM");
-					this.OnMAPMChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MALOAI", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int MALOAI
-		{
-			get
-			{
-				return this._MALOAI;
-			}
-			set
-			{
-				if ((this._MALOAI != value))
-				{
-					if (this._LOAIPHANMEM.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.OnMALOAIChanging(value);
-					this.SendPropertyChanging();
-					this._MALOAI = value;
-					this.SendPropertyChanged("MALOAI");
-					this.OnMALOAIChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="LOAIPHANMEM_THUOCLOAIPM", Storage="_LOAIPHANMEM", ThisKey="MALOAI", OtherKey="MALOAI", IsForeignKey=true)]
-		public LOAIPHANMEM LOAIPHANMEM
-		{
-			get
-			{
-				return this._LOAIPHANMEM.Entity;
-			}
-			set
-			{
-				LOAIPHANMEM previousValue = this._LOAIPHANMEM.Entity;
-				if (((previousValue != value) 
-							|| (this._LOAIPHANMEM.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._LOAIPHANMEM.Entity = null;
-						previousValue.THUOCLOAIPMs.Remove(this);
-					}
-					this._LOAIPHANMEM.Entity = value;
-					if ((value != null))
-					{
-						value.THUOCLOAIPMs.Add(this);
-						this._MALOAI = value.MALOAI;
-					}
-					else
-					{
-						this._MALOAI = default(int);
-					}
-					this.SendPropertyChanged("LOAIPHANMEM");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHANMEM_THUOCLOAIPM", Storage="_PHANMEM", ThisKey="MAPM", OtherKey="MAPM", IsForeignKey=true)]
-		public PHANMEM PHANMEM
-		{
-			get
-			{
-				return this._PHANMEM.Entity;
-			}
-			set
-			{
-				PHANMEM previousValue = this._PHANMEM.Entity;
-				if (((previousValue != value) 
-							|| (this._PHANMEM.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._PHANMEM.Entity = null;
-						previousValue.THUOCLOAIPMs.Remove(this);
-					}
-					this._PHANMEM.Entity = value;
-					if ((value != null))
-					{
-						value.THUOCLOAIPMs.Add(this);
 						this._MAPM = value.MAPM;
 					}
 					else
@@ -770,6 +781,51 @@ namespace DAL
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DANHMUC")]
+	public partial class DANHMUC
+	{
+		
+		private string _TEN;
+		
+		private string _GIATRI;
+		
+		public DANHMUC()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TEN", DbType="NVarChar(MAX)")]
+		public string TEN
+		{
+			get
+			{
+				return this._TEN;
+			}
+			set
+			{
+				if ((this._TEN != value))
+				{
+					this._TEN = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GIATRI", DbType="NVarChar(MAX)")]
+		public string GIATRI
+		{
+			get
+			{
+				return this._GIATRI;
+			}
+			set
+			{
+				if ((this._GIATRI != value))
+				{
+					this._GIATRI = value;
+				}
 			}
 		}
 	}
@@ -1562,13 +1618,15 @@ namespace DAL
 		
 		private string _HINHANH;
 		
-		private EntitySet<CTHD> _CTHDs;
-		
 		private EntitySet<THUOCLOAIPM> _THUOCLOAIPMs;
+		
+		private EntitySet<CTHD> _CTHDs;
 		
 		private EntitySet<KEYPM> _KEYPMs;
 		
 		private EntitySet<THONGTINBOSUNG> _THONGTINBOSUNGs;
+		
+		private EntitySet<Banner> _Banners;
 		
 		private EntityRef<NHAPHATHANH> _NHAPHATHANH;
 		
@@ -1600,10 +1658,11 @@ namespace DAL
 		
 		public PHANMEM()
 		{
-			this._CTHDs = new EntitySet<CTHD>(new Action<CTHD>(this.attach_CTHDs), new Action<CTHD>(this.detach_CTHDs));
 			this._THUOCLOAIPMs = new EntitySet<THUOCLOAIPM>(new Action<THUOCLOAIPM>(this.attach_THUOCLOAIPMs), new Action<THUOCLOAIPM>(this.detach_THUOCLOAIPMs));
+			this._CTHDs = new EntitySet<CTHD>(new Action<CTHD>(this.attach_CTHDs), new Action<CTHD>(this.detach_CTHDs));
 			this._KEYPMs = new EntitySet<KEYPM>(new Action<KEYPM>(this.attach_KEYPMs), new Action<KEYPM>(this.detach_KEYPMs));
 			this._THONGTINBOSUNGs = new EntitySet<THONGTINBOSUNG>(new Action<THONGTINBOSUNG>(this.attach_THONGTINBOSUNGs), new Action<THONGTINBOSUNG>(this.detach_THONGTINBOSUNGs));
+			this._Banners = new EntitySet<Banner>(new Action<Banner>(this.attach_Banners), new Action<Banner>(this.detach_Banners));
 			this._NHAPHATHANH = default(EntityRef<NHAPHATHANH>);
 			OnCreated();
 		}
@@ -1792,7 +1851,7 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HINHANH", DbType="Text", UpdateCheck=UpdateCheck.Never)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HINHANH", DbType="NVarChar(MAX)")]
 		public string HINHANH
 		{
 			get
@@ -1812,19 +1871,6 @@ namespace DAL
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHANMEM_CTHD", Storage="_CTHDs", ThisKey="MAPM", OtherKey="MAPM")]
-		public EntitySet<CTHD> CTHDs
-		{
-			get
-			{
-				return this._CTHDs;
-			}
-			set
-			{
-				this._CTHDs.Assign(value);
-			}
-		}
-		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHANMEM_THUOCLOAIPM", Storage="_THUOCLOAIPMs", ThisKey="MAPM", OtherKey="MAPM")]
 		public EntitySet<THUOCLOAIPM> THUOCLOAIPMs
 		{
@@ -1835,6 +1881,19 @@ namespace DAL
 			set
 			{
 				this._THUOCLOAIPMs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHANMEM_CTHD", Storage="_CTHDs", ThisKey="MAPM", OtherKey="MAPM")]
+		public EntitySet<CTHD> CTHDs
+		{
+			get
+			{
+				return this._CTHDs;
+			}
+			set
+			{
+				this._CTHDs.Assign(value);
 			}
 		}
 		
@@ -1861,6 +1920,19 @@ namespace DAL
 			set
 			{
 				this._THONGTINBOSUNGs.Assign(value);
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHANMEM_Banner", Storage="_Banners", ThisKey="MAPM", OtherKey="MaPM")]
+		public EntitySet<Banner> Banners
+		{
+			get
+			{
+				return this._Banners;
+			}
+			set
+			{
+				this._Banners.Assign(value);
 			}
 		}
 		
@@ -1918,18 +1990,6 @@ namespace DAL
 			}
 		}
 		
-		private void attach_CTHDs(CTHD entity)
-		{
-			this.SendPropertyChanging();
-			entity.PHANMEM = this;
-		}
-		
-		private void detach_CTHDs(CTHD entity)
-		{
-			this.SendPropertyChanging();
-			entity.PHANMEM = null;
-		}
-		
 		private void attach_THUOCLOAIPMs(THUOCLOAIPM entity)
 		{
 			this.SendPropertyChanging();
@@ -1937,6 +1997,18 @@ namespace DAL
 		}
 		
 		private void detach_THUOCLOAIPMs(THUOCLOAIPM entity)
+		{
+			this.SendPropertyChanging();
+			entity.PHANMEM = null;
+		}
+		
+		private void attach_CTHDs(CTHD entity)
+		{
+			this.SendPropertyChanging();
+			entity.PHANMEM = this;
+		}
+		
+		private void detach_CTHDs(CTHD entity)
 		{
 			this.SendPropertyChanging();
 			entity.PHANMEM = null;
@@ -1961,6 +2033,18 @@ namespace DAL
 		}
 		
 		private void detach_THONGTINBOSUNGs(THONGTINBOSUNG entity)
+		{
+			this.SendPropertyChanging();
+			entity.PHANMEM = null;
+		}
+		
+		private void attach_Banners(Banner entity)
+		{
+			this.SendPropertyChanging();
+			entity.PHANMEM = this;
+		}
+		
+		private void detach_Banners(Banner entity)
 		{
 			this.SendPropertyChanging();
 			entity.PHANMEM = null;
@@ -2575,47 +2659,153 @@ namespace DAL
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DANHMUC")]
-	public partial class DANHMUC
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Banner")]
+	public partial class Banner : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
-		private string _TEN;
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _GIATRI;
+		private int _MaBN;
 		
-		public DANHMUC()
+		private System.Nullable<int> _MaPM;
+		
+		private string _HINHANH;
+		
+		private EntityRef<PHANMEM> _PHANMEM;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaBNChanging(int value);
+    partial void OnMaBNChanged();
+    partial void OnMaPMChanging(System.Nullable<int> value);
+    partial void OnMaPMChanged();
+    partial void OnHINHANHChanging(string value);
+    partial void OnHINHANHChanged();
+    #endregion
+		
+		public Banner()
 		{
+			this._PHANMEM = default(EntityRef<PHANMEM>);
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TEN", DbType="NVarChar(MAX)")]
-		public string TEN
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaBN", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int MaBN
 		{
 			get
 			{
-				return this._TEN;
+				return this._MaBN;
 			}
 			set
 			{
-				if ((this._TEN != value))
+				if ((this._MaBN != value))
 				{
-					this._TEN = value;
+					this.OnMaBNChanging(value);
+					this.SendPropertyChanging();
+					this._MaBN = value;
+					this.SendPropertyChanged("MaBN");
+					this.OnMaBNChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GIATRI", DbType="NVarChar(MAX)")]
-		public string GIATRI
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaPM", DbType="Int")]
+		public System.Nullable<int> MaPM
 		{
 			get
 			{
-				return this._GIATRI;
+				return this._MaPM;
 			}
 			set
 			{
-				if ((this._GIATRI != value))
+				if ((this._MaPM != value))
 				{
-					this._GIATRI = value;
+					if (this._PHANMEM.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaPMChanging(value);
+					this.SendPropertyChanging();
+					this._MaPM = value;
+					this.SendPropertyChanged("MaPM");
+					this.OnMaPMChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HINHANH", DbType="NVarChar(MAX) NOT NULL", CanBeNull=false)]
+		public string HINHANH
+		{
+			get
+			{
+				return this._HINHANH;
+			}
+			set
+			{
+				if ((this._HINHANH != value))
+				{
+					this.OnHINHANHChanging(value);
+					this.SendPropertyChanging();
+					this._HINHANH = value;
+					this.SendPropertyChanged("HINHANH");
+					this.OnHINHANHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PHANMEM_Banner", Storage="_PHANMEM", ThisKey="MaPM", OtherKey="MAPM", IsForeignKey=true)]
+		public PHANMEM PHANMEM
+		{
+			get
+			{
+				return this._PHANMEM.Entity;
+			}
+			set
+			{
+				PHANMEM previousValue = this._PHANMEM.Entity;
+				if (((previousValue != value) 
+							|| (this._PHANMEM.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._PHANMEM.Entity = null;
+						previousValue.Banners.Remove(this);
+					}
+					this._PHANMEM.Entity = value;
+					if ((value != null))
+					{
+						value.Banners.Add(this);
+						this._MaPM = value.MAPM;
+					}
+					else
+					{
+						this._MaPM = default(Nullable<int>);
+					}
+					this.SendPropertyChanged("PHANMEM");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}

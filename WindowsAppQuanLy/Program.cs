@@ -21,6 +21,7 @@ namespace WindowsAppQuanLy
         public static FormKeyPhanMem formKeySanPham;
         public static FormHoaDon formHoaDon;
         public static FormThongKe formHeThong;
+        public static FormWeb formWeb;
         public static LoadingScreen loadingScreen;
         /// <summary>
         ///  The main entry point for the application.
@@ -66,6 +67,7 @@ namespace WindowsAppQuanLy
             formKeySanPham = new FormKeyPhanMem(formMain);
             formHoaDon = new FormHoaDon(formMain);
             formHeThong = new FormThongKe(formMain);
+            formWeb = new FormWeb(formMain);
         }
     }
 }

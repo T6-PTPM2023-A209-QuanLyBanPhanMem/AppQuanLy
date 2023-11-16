@@ -1,5 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QL_CuaHangPhanMem" Class="DALDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=android17x.database.windows.net;Initial Catalog=QL_CuaHangPhanMem;Persist Security Info=True;User ID=android17x;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QL_CuaHangPhanMemConnectionString2" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=android17x.database.windows.net;Initial Catalog=QL_CuaHangPhanMem;Persist Security Info=True;User ID=android17x;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DAL.Properties.Settings" SettingsPropertyName="QL_CuaHangPhanMemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.THUOCLOAIPM" Member="THUOCLOAIPMs">
+    <Type Name="THUOCLOAIPM">
+      <Column Name="MAPM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MALOAI" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="LOAIPHANMEM_THUOCLOAIPM" Member="LOAIPHANMEM" ThisKey="MALOAI" OtherKey="MALOAI" Type="LOAIPHANMEM" IsForeignKey="true" />
+      <Association Name="PHANMEM_THUOCLOAIPM" Member="PHANMEM" ThisKey="MAPM" OtherKey="MAPM" Type="PHANMEM" IsForeignKey="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.CTHD" Member="CTHDs">
     <Type Name="CTHD">
       <Column Name="MAHD" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -10,14 +18,6 @@
       <Association Name="PHANMEM_CTHD" Member="PHANMEM" ThisKey="MAPM" OtherKey="MAPM" Type="PHANMEM" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.THUOCLOAIPM" Member="THUOCLOAIPMs">
-    <Type Name="THUOCLOAIPM">
-      <Column Name="MAPM" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MALOAI" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="LOAIPHANMEM_THUOCLOAIPM" Member="LOAIPHANMEM" ThisKey="MALOAI" OtherKey="MALOAI" Type="LOAIPHANMEM" IsForeignKey="true" />
-      <Association Name="PHANMEM_THUOCLOAIPM" Member="PHANMEM" ThisKey="MAPM" OtherKey="MAPM" Type="PHANMEM" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.CTHD_KEY" Member="CTHD_KEYs">
     <Type Name="CTHD_KEY">
       <Column Name="MAHD" Type="System.String" DbType="VarChar(100) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -25,6 +25,12 @@
       <Column Name="MAKEY" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Association Name="HOADON_CTHD_KEY" Member="HOADON" ThisKey="MAHD" OtherKey="MAHD" Type="HOADON" IsForeignKey="true" />
       <Association Name="KEYPM_CTHD_KEY" Member="KEYPM" ThisKey="MAPM,MAKEY" OtherKey="MAPM,MAKEY" Type="KEYPM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DANHMUC" Member="DANHMUCs">
+    <Type Name="DANHMUC">
+      <Column Name="TEN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GIATRI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.HOADON" Member="HOADONs">
@@ -77,11 +83,12 @@
       <Column Name="DONVITHOIHAN" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
       <Column Name="DONGIA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="SOLUONG" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="HINHANH" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
-      <Association Name="PHANMEM_CTHD" Member="CTHDs" ThisKey="MAPM" OtherKey="MAPM" Type="CTHD" />
+      <Column Name="HINHANH" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
       <Association Name="PHANMEM_THUOCLOAIPM" Member="THUOCLOAIPMs" ThisKey="MAPM" OtherKey="MAPM" Type="THUOCLOAIPM" />
+      <Association Name="PHANMEM_CTHD" Member="CTHDs" ThisKey="MAPM" OtherKey="MAPM" Type="CTHD" />
       <Association Name="PHANMEM_KEYPM" Member="KEYPMs" ThisKey="MAPM" OtherKey="MAPM" Type="KEYPM" />
       <Association Name="PHANMEM_THONGTINBOSUNG" Member="THONGTINBOSUNGs" ThisKey="MAPM" OtherKey="MAPM" Type="THONGTINBOSUNG" />
+      <Association Name="PHANMEM_Banner" Member="Banners" ThisKey="MAPM" OtherKey="MaPM" Type="Banner" />
       <Association Name="NHAPHATHANH_PHANMEM" Member="NHAPHATHANH" ThisKey="MANPH" OtherKey="MANPH" Type="NHAPHATHANH" IsForeignKey="true" />
     </Type>
   </Table>
@@ -116,10 +123,12 @@
       <Association Name="PHANMEM_THONGTINBOSUNG" Member="PHANMEM" ThisKey="MAPM" OtherKey="MAPM" Type="PHANMEM" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="dbo.DANHMUC" Member="DANHMUCs">
-    <Type Name="DANHMUC">
-      <Column Name="TEN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
-      <Column Name="GIATRI" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+  <Table Name="dbo.Banner" Member="Banners">
+    <Type Name="Banner">
+      <Column Name="MaBN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaPM" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HINHANH" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="PHANMEM_Banner" Member="PHANMEM" ThisKey="MaPM" OtherKey="MAPM" Type="PHANMEM" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

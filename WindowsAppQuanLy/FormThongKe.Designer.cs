@@ -43,6 +43,7 @@ namespace WindowsAppQuanLy.GUI
             this.label1 = new System.Windows.Forms.Label();
             this.btnChon = new ThuVienControls.RoundButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnTatCa = new ThuVienControls.RoundButton();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -90,11 +91,13 @@ namespace WindowsAppQuanLy.GUI
             this.tableLayoutPanel2.Controls.Add(this.btnTaiKhoan, 1, 7);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnChon, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnTatCa, 1, 8);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 9;
+            this.tableLayoutPanel2.RowCount = 10;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
@@ -109,7 +112,7 @@ namespace WindowsAppQuanLy.GUI
             // txtDuongDan
             // 
             this.txtDuongDan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDuongDan.Location = new System.Drawing.Point(106, 197);
+            this.txtDuongDan.Location = new System.Drawing.Point(106, 172);
             this.txtDuongDan.Margin = new System.Windows.Forms.Padding(6);
             this.txtDuongDan.Name = "txtDuongDan";
             this.txtDuongDan.ReadOnly = true;
@@ -125,7 +128,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnPhanMem.CornerRoundingRadius = 25F;
             this.btnPhanMem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPhanMem.Enabled = false;
-            this.btnPhanMem.Location = new System.Drawing.Point(115, 246);
+            this.btnPhanMem.Location = new System.Drawing.Point(115, 221);
             this.btnPhanMem.Margin = new System.Windows.Forms.Padding(15, 5, 15, 5);
             this.btnPhanMem.Name = "btnPhanMem";
             this.btnPhanMem.OverrideDefault.Back.Color1 = System.Drawing.Color.DodgerBlue;
@@ -169,7 +172,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnNPH.CornerRoundingRadius = 25F;
             this.btnNPH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNPH.Enabled = false;
-            this.btnNPH.Location = new System.Drawing.Point(115, 296);
+            this.btnNPH.Location = new System.Drawing.Point(115, 271);
             this.btnNPH.Margin = new System.Windows.Forms.Padding(15, 5, 15, 5);
             this.btnNPH.Name = "btnNPH";
             this.btnNPH.OverrideDefault.Back.Color1 = System.Drawing.Color.DodgerBlue;
@@ -213,7 +216,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnLoaiPM.CornerRoundingRadius = 25F;
             this.btnLoaiPM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnLoaiPM.Enabled = false;
-            this.btnLoaiPM.Location = new System.Drawing.Point(115, 346);
+            this.btnLoaiPM.Location = new System.Drawing.Point(115, 321);
             this.btnLoaiPM.Margin = new System.Windows.Forms.Padding(15, 5, 15, 5);
             this.btnLoaiPM.Name = "btnLoaiPM";
             this.btnLoaiPM.OverrideDefault.Back.Color1 = System.Drawing.Color.DodgerBlue;
@@ -257,7 +260,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnCTPM.CornerRoundingRadius = 25F;
             this.btnCTPM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCTPM.Enabled = false;
-            this.btnCTPM.Location = new System.Drawing.Point(115, 396);
+            this.btnCTPM.Location = new System.Drawing.Point(115, 371);
             this.btnCTPM.Margin = new System.Windows.Forms.Padding(15, 5, 15, 5);
             this.btnCTPM.Name = "btnCTPM";
             this.btnCTPM.OverrideDefault.Back.Color1 = System.Drawing.Color.DodgerBlue;
@@ -301,7 +304,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnHoaDon.CornerRoundingRadius = 25F;
             this.btnHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnHoaDon.Enabled = false;
-            this.btnHoaDon.Location = new System.Drawing.Point(115, 446);
+            this.btnHoaDon.Location = new System.Drawing.Point(115, 421);
             this.btnHoaDon.Margin = new System.Windows.Forms.Padding(15, 5, 15, 5);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.OverrideDefault.Back.Color1 = System.Drawing.Color.DodgerBlue;
@@ -345,7 +348,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnTaiKhoan.CornerRoundingRadius = 25F;
             this.btnTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTaiKhoan.Enabled = false;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(115, 496);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(115, 471);
             this.btnTaiKhoan.Margin = new System.Windows.Forms.Padding(15, 5, 15, 5);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.OverrideDefault.Back.Color1 = System.Drawing.Color.DodgerBlue;
@@ -388,7 +391,7 @@ namespace WindowsAppQuanLy.GUI
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 191);
+            this.label1.Location = new System.Drawing.Point(3, 166);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 50);
             this.label1.TabIndex = 7;
@@ -398,7 +401,7 @@ namespace WindowsAppQuanLy.GUI
             // btnChon
             // 
             this.btnChon.CornerRoundingRadius = 25F;
-            this.btnChon.Location = new System.Drawing.Point(511, 197);
+            this.btnChon.Location = new System.Drawing.Point(511, 172);
             this.btnChon.Margin = new System.Windows.Forms.Padding(6);
             this.btnChon.Name = "btnChon";
             this.btnChon.OverrideDefault.Back.Color1 = System.Drawing.Color.DodgerBlue;
@@ -447,12 +450,56 @@ namespace WindowsAppQuanLy.GUI
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Báo cáo doanh thu";
             // 
-            // FormHeThong
+            // btnTatCa
+            // 
+            this.btnTatCa.CornerRoundingRadius = 25F;
+            this.btnTatCa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTatCa.Enabled = false;
+            this.btnTatCa.Location = new System.Drawing.Point(115, 521);
+            this.btnTatCa.Margin = new System.Windows.Forms.Padding(15, 5, 15, 5);
+            this.btnTatCa.Name = "btnTatCa";
+            this.btnTatCa.OverrideDefault.Back.Color1 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.OverrideDefault.Back.Color2 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.OverrideDefault.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnTatCa.OverrideDefault.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.btnTatCa.OverrideFocus.Back.Color1 = System.Drawing.Color.White;
+            this.btnTatCa.OverrideFocus.Back.Color2 = System.Drawing.Color.White;
+            this.btnTatCa.OverrideFocus.Content.ShortText.Color1 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.OverrideFocus.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.Size = new System.Drawing.Size(375, 40);
+            this.btnTatCa.StateCommon.Back.Color1 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StateCommon.Back.Color2 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnTatCa.StateCommon.Border.Rounding = 25F;
+            this.btnTatCa.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.btnTatCa.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnTatCa.StateNormal.Back.Color1 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StatePressed.Back.Color1 = System.Drawing.Color.White;
+            this.btnTatCa.StatePressed.Back.Color2 = System.Drawing.Color.White;
+            this.btnTatCa.StatePressed.Content.ShortText.Color1 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StatePressed.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StateTracking.Back.Color1 = System.Drawing.Color.White;
+            this.btnTatCa.StateTracking.Back.Color2 = System.Drawing.Color.White;
+            this.btnTatCa.StateTracking.Border.Color1 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StateTracking.Border.Color2 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StateTracking.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.btnTatCa.StateTracking.Content.LongText.Color1 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StateTracking.Content.LongText.Color2 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
+            this.btnTatCa.TabIndex = 9;
+            this.btnTatCa.Values.Text = "Xuất toàn bộ thống kê";
+            // 
+            // FormThongKe
             // 
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1238, 758);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "FormHeThong";
+            this.Name = "FormThongKe";
             this.Text = "FormTongQuan";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -477,5 +524,6 @@ namespace WindowsAppQuanLy.GUI
         private ThuVienControls.RoundButton btnHoaDon;
         private ThuVienControls.RoundButton btnTaiKhoan;
         private ThuVienControls.RoundButton btnChon;
+        private ThuVienControls.RoundButton btnTatCa;
     }
 }

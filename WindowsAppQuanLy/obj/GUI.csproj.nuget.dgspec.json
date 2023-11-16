@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\WindowsAppQuanLy\\GUI.csproj": {}
+    "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\WindowsAppQuanLy\\GUI.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\DAL.csproj": {
+    "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\DAL.csproj",
+        "projectUniqueName": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\DAL.csproj",
+        "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\obj\\",
+        "outputPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj": {
+    "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj",
+        "projectUniqueName": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj",
         "projectName": "CustomControls",
-        "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj",
+        "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj",
         "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\obj\\",
+        "outputPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -108,14 +108,14 @@
         }
       }
     },
-    "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\WindowsAppQuanLy\\GUI.csproj": {
+    "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\WindowsAppQuanLy\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\WindowsAppQuanLy\\GUI.csproj",
+        "projectUniqueName": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\WindowsAppQuanLy\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\WindowsAppQuanLy\\GUI.csproj",
+        "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\WindowsAppQuanLy\\GUI.csproj",
         "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\WindowsAppQuanLy\\obj\\",
+        "outputPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\WindowsAppQuanLy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -133,11 +133,11 @@
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\DAL.csproj": {
-                "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\DAL.csproj"
+              "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\DAL.csproj": {
+                "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\DAL.csproj"
               },
-              "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj": {
-                "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj"
+              "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj": {
+                "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj"
               }
             }
           }
@@ -152,6 +152,14 @@
         "net48": {
           "targetAlias": "net48",
           "dependencies": {
+            "CefSharp.Common": {
+              "target": "Package",
+              "version": "[119.1.20, )"
+            },
+            "CefSharp.WinForms": {
+              "target": "Package",
+              "version": "[119.1.20, )"
+            },
             "ExcelDataReader": {
               "target": "Package",
               "version": "[3.6.0, )"
@@ -170,11 +178,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win7-x86": {
-          "#import": []
         }
       }
     }

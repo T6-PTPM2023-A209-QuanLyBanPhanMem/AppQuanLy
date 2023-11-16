@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+	<PlatformTarget>AnyCPU</PlatformTarget>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
@@ -24,6 +25,8 @@
 
 
 	<ItemGroup>
+    <PackageReference Include="CefSharp.Common" Version="119.1.20" />
+    <PackageReference Include="CefSharp.WinForms" Version="119.1.20" />
     <PackageReference Include="ExcelDataReader" Version="3.6.0" />
     <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
     <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />

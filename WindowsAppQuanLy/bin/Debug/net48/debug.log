@@ -1,0 +1,9 @@
+[1116/095954.884:WARNING:policy_logger.cc(151)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[1116/100230.653:WARNING:policy_logger.cc(151)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[1116/102212.858:WARNING:policy_logger.cc(151)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[1116/102516.151:WARNING:policy_logger.cc(151)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[1116/102744.086:WARNING:policy_logger.cc(151)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[1116/103048.591:WARNING:policy_logger.cc(151)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[1116/103242.783:WARNING:policy_logger.cc(151)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.
+[1116/103247.819:INFO:CONSOLE(6)] "Uncaught TypeError: Cannot read properties of null (reading 'classList')", source: https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js (6)
+[1116/115304.677:WARNING:policy_logger.cc(151)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(88) Could not create policy manager as CBCM is not enabled.

@@ -20,6 +20,47 @@ namespace WindowsAppQuanLy.GUI
 
             btnChon.Click += BtnChon_Click;
             btnPhanMem.Click += BtnPhanMem_Click;
+            btnNPH.Click += BtnNPH_Click;
+            btnHoaDon.Click += BtnHoaDon_Click;
+            btnLoaiPM.Click += BtnLoaiPM_Click;
+            btnCTPM.Click += BtnCTPM_Click;
+            btnTaiKhoan.Click += BtnTaiKhoan_Click;
+            btnTatCa.Click += BtnTatCa_Click;
+        }
+
+        private void BtnTatCa_Click(object sender, EventArgs e)
+        {
+            DAL_TaiKhoan.xuatExcel(txtDuongDan.Text);
+            DAL_ChiTietPhanMem.xuatExcel(txtDuongDan.Text);
+            DAL_LoaiPM.xuatExcel(txtDuongDan.Text);
+            DAL_HoaDon.xuatExcel(txtDuongDan.Text);
+            DAL_NPH.xuatExcel(txtDuongDan.Text);
+            DAL_PhanMem.xuatExcel(txtDuongDan.Text);
+        }
+
+        private void BtnTaiKhoan_Click(object sender, EventArgs e)
+        {
+            DAL_TaiKhoan.xuatExcel(txtDuongDan.Text);
+        }
+
+        private void BtnCTPM_Click(object sender, EventArgs e)
+        {
+            DAL_ChiTietPhanMem.xuatExcel(txtDuongDan.Text);
+        }
+
+        private void BtnLoaiPM_Click(object sender, EventArgs e)
+        {
+            DAL_LoaiPM.xuatExcel(txtDuongDan.Text);
+        }
+
+        private void BtnHoaDon_Click(object sender, EventArgs e)
+        {
+            DAL_HoaDon.xuatExcel(txtDuongDan.Text);
+        }
+
+        private void BtnNPH_Click(object sender, EventArgs e)
+        {
+            DAL_NPH.xuatExcel(txtDuongDan.Text);
         }
 
         private void BtnPhanMem_Click(object sender, EventArgs e)
@@ -46,6 +87,17 @@ namespace WindowsAppQuanLy.GUI
                 btnLoaiPM.Enabled = true;
                 btnNPH.Enabled = true;
                 btnTaiKhoan.Enabled = true;
+                btnTatCa.Enabled = true;
+            }
+            else
+            {
+                btnPhanMem.Enabled = false;
+                btnCTPM.Enabled = false;
+                btnHoaDon.Enabled = false;
+                btnLoaiPM.Enabled = false;
+                btnNPH.Enabled = false;
+                btnTaiKhoan.Enabled = false;
+                btnTatCa.Enabled = false;
             }
         }
     }

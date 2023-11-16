@@ -66,16 +66,13 @@ namespace DAL
         {
             try
             {
-                // Get any Stream — it can be FileStream, MemoryStream or any other type of Stream
                 var stream = File.Open(pm.HINHANH, FileMode.Open);
 
-                // Construct FirebaseStorage with path to where you want to upload the file and put it there
                 var task = new FirebaseStorage("chatapp-c35ec.appspot.com")
                  .Child("prductImage")
                  .Child(pm.TENPM)
                  .PutAsync(stream);
 
-                // Await the task to wait until upload is completed and get the download url
                 var downloadUrl = await task;
 
                 pm.HINHANH = downloadUrl;
@@ -98,16 +95,13 @@ namespace DAL
                 DALDataContext dal = DAL_SQL.GetDataContext();
                 PHANMEM temp = dal.PHANMEMs.FirstOrDefault(e => e.MAPM == pm.MAPM);
 
-                // Get any Stream — it can be FileStream, MemoryStream or any other type of Stream
                 var stream = File.Open(pm.HINHANH, FileMode.Open);
 
-                // Construct FirebaseStorage with path to where you want to upload the file and put it there
                 var task = new FirebaseStorage("chatapp-c35ec.appspot.com")
                  .Child("prductImage")
                  .Child(pm.TENPM)
                  .PutAsync(stream);
 
-                // Await the task to wait until upload is completed and get the download url
                 var downloadUrl = await task;
 
                 pm.HINHANH = downloadUrl;
@@ -175,7 +169,6 @@ namespace DAL
             workSheet["F1"].Value = "Số lượng tồn kho";
             workSheet["G1"].Value = "Đơn giá";
             workSheet["H1"].Value = "Tổng doanh thu";
-            workSheet["I1"].Value = "Đường dẫn hình ảnh";
 
             for (int i = 2; i <= dsPhanMem.Count + 1; i++)
             {
@@ -187,8 +180,16 @@ namespace DAL
                 workSheet["F" + i].Value = dsPhanMem[i - 2].SOLUONG;
                 workSheet["G" + i].Value = dsPhanMem[i - 2].DONGIA;
                 workSheet["H" + i].Value = dsPhanMem[i - 2].CTHDs.Sum(x => x.THANHTIEN);
-                workSheet["I" + i].Value = dsPhanMem[i - 2].HINHANH;
             }
+
+            workSheet.AutoSizeColumn(0);
+            workSheet.AutoSizeColumn(1);
+            workSheet.AutoSizeColumn(2);
+            workSheet.AutoSizeColumn(3);
+            workSheet.AutoSizeColumn(4);
+            workSheet.AutoSizeColumn(5);
+            workSheet.AutoSizeColumn(6);
+            workSheet.AutoSizeColumn(7);
 
             workBook.SaveAs(duongDan + @"\ThongKe.xlsx");
         }

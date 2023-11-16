@@ -1,155 +1,168 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 13.625, 13.75" name="DAL">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.25, 15.75" name="DAL">
   <DataContextMoniker Name="/DALDataContext" />
   <nestedChildShapes>
-    <classShape Id="d8c8bdd2-7d56-4183-9435-38cd6cb472dc" absoluteBounds="6.25, 1.875, 2, 1.5785953776041666">
-      <DataClassMoniker Name="/DALDataContext/CTHD" />
-      <nestedChildShapes>
-        <elementListCompartment Id="a88b96a2-73a9-4e9f-a89b-e635c61216e9" absoluteBounds="6.265, 2.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="46388b66-7f87-4fdc-a3d8-d28588fdf96e" absoluteBounds="6.25, 5, 2, 1.1939925130208326">
+    <classShape Id="91413741-2c51-404b-92b9-7ab82ad028a9" absoluteBounds="6.25, 7.125, 2, 1.1939925130208344">
       <DataClassMoniker Name="/DALDataContext/THUOCLOAIPM" />
       <nestedChildShapes>
-        <elementListCompartment Id="cfc2a6ab-6c8d-4e63-b0ec-06b5a7a3a07b" absoluteBounds="6.265, 5.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="b81a409f-942c-4d68-8bb0-90b4fb1acae2" absoluteBounds="6.265, 7.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="25a9fa94-df0f-467a-8bfc-1d5df9a86395" absoluteBounds="9, 11.75, 2, 1.3862939453124987">
+    <classShape Id="dea3d092-8785-452b-8fc2-f4cf803580b7" absoluteBounds="9.25, 5.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/DALDataContext/CTHD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ebb2294-eb78-4f64-bad1-585ded11f82c" absoluteBounds="9.265, 6.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="750a9dc7-3a88-4dff-b4af-c8764bd1181e" absoluteBounds="9, 13.75, 2, 1.3862939453124987">
       <DataClassMoniker Name="/DALDataContext/CTHD_KEY" />
       <nestedChildShapes>
-        <elementListCompartment Id="6d359de7-ee95-486c-9f93-3daa347cfe9c" absoluteBounds="9.015, 12.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="5e9ab5e9-3996-41d0-9269-1f1d55171b0e" absoluteBounds="9.015, 14.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="b06f6d93-0aef-45f6-8435-71951366481b" absoluteBounds="3.5, 0.75, 2, 1.7708968098958329">
-      <DataClassMoniker Name="/DALDataContext/HOADON" />
-      <nestedChildShapes>
-        <elementListCompartment Id="8caadf0a-2b56-4e00-a0d5-56e75fc9e6fc" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="481686f5-6365-44c9-b3ab-06082a328a76" absoluteBounds="6.25, 11.5, 2, 1.9631982421874987">
-      <DataClassMoniker Name="/DALDataContext/KEYPM" />
-      <nestedChildShapes>
-        <elementListCompartment Id="9e69d959-d230-48f5-9fe7-ddf0f03c5a23" absoluteBounds="6.265, 11.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="a2cf5ece-7415-4b26-a842-4b0b8c63201c" absoluteBounds="3.5, 8, 2, 1.1939925130208344">
-      <DataClassMoniker Name="/DALDataContext/LOAIPHANMEM" />
-      <nestedChildShapes>
-        <elementListCompartment Id="2250e6a9-fbd2-45a7-bb21-0139813e82ee" absoluteBounds="3.515, 8.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="605901e5-eca7-44cf-875d-412b467a5c06" absoluteBounds="0.75, 5, 2, 1.1939925130208326">
-      <DataClassMoniker Name="/DALDataContext/NHAPHATHANH" />
-      <nestedChildShapes>
-        <elementListCompartment Id="5c08664c-3760-48af-83fa-9b712ee34069" absoluteBounds="0.765, 5.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="78228795-ecc6-4294-b99c-f7bd33776429" absoluteBounds="3.5, 4.25, 2, 2.7324039713541666">
-      <DataClassMoniker Name="/DALDataContext/PHANMEM" />
-      <nestedChildShapes>
-        <elementListCompartment Id="47c1d79f-f28e-4a1c-b4cb-4e4a2896fe2c" absoluteBounds="3.515, 4.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="fa2ad84d-d091-41dd-bc3f-107d07ffd961" absoluteBounds="0.75, 7.875, 2, 2.5401025390624996">
-      <DataClassMoniker Name="/DALDataContext/TAIKHOAN" />
-      <nestedChildShapes>
-        <elementListCompartment Id="43a81005-f1e5-4550-868a-286581cffc0d" absoluteBounds="0.765, 8.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="c02d0513-a3d0-4445-ad3b-d3841f62226c" absoluteBounds="8.75, 0.75, 2, 1.1939925130208335">
-      <DataClassMoniker Name="/DALDataContext/TAIKHOAN_QUANTRI" />
-      <nestedChildShapes>
-        <elementListCompartment Id="a277b1c6-b3df-4d48-8147-5c49e4d6eeb8" absoluteBounds="8.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="07f449be-7443-4566-ab9f-26cced07a136" absoluteBounds="6.25, 7.75, 2, 1.7708968098958335">
-      <DataClassMoniker Name="/DALDataContext/THONGTINBOSUNG" />
-      <nestedChildShapes>
-        <elementListCompartment Id="66ca1bc5-6b3e-4da1-b79d-fdc9114a44b2" absoluteBounds="6.265, 8.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(5.5 : 2.19794840494792); (5.91666666666667 : 2.19794840494792 : JumpStart); (6.08333333333333 : 2.19794840494792 : JumpEnd); (6.25 : 2.19794840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/HOADON/HOADON_CTHD" />
-      <nodes>
-        <classShapeMoniker Id="b06f6d93-0aef-45f6-8435-71951366481b" />
-        <classShapeMoniker Id="d8c8bdd2-7d56-4183-9435-38cd6cb472dc" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 1.44272220247396); (6 : 1.44272220247396); (6 : 3.70359537760417); (10 : 3.70359537760417); (10 : 11.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/HOADON/HOADON_CTHD_KEY" />
-      <nodes>
-        <classShapeMoniker Id="b06f6d93-0aef-45f6-8435-71951366481b" />
-        <classShapeMoniker Id="25a9fa94-df0f-467a-8bfc-1d5df9a86395" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(8.25 : 12.4431469726562); (9 : 12.4431469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/KEYPM/KEYPM_CTHD_KEY" />
-      <nodes>
-        <classShapeMoniker Id="481686f5-6365-44c9-b3ab-06082a328a76" />
-        <classShapeMoniker Id="25a9fa94-df0f-467a-8bfc-1d5df9a86395" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 8); (5.875 : 7.625); (5.875 : 6.56899251302083); (6.25 : 6.19399251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/LOAIPHANMEM/LOAIPHANMEM_THUOCLOAIPM" />
-      <nodes>
-        <classShapeMoniker Id="a2cf5ece-7415-4b26-a842-4b0b8c63201c" />
-        <classShapeMoniker Id="46388b66-7f87-4fdc-a3d8-d28588fdf96e" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 4.25); (5.875 : 3.875); (5.875 : 2.85702389127604); (5.91666666666667 : 2.85702389127604 : JumpStart); (6.08333333333333 : 2.85702389127604 : JumpEnd); (6.25 : 2.85702389127604)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/PHANMEM/PHANMEM_CTHD" />
-      <nodes>
-        <classShapeMoniker Id="78228795-ecc6-4294-b99c-f7bd33776429" />
-        <classShapeMoniker Id="d8c8bdd2-7d56-4183-9435-38cd6cb472dc" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 5.56574375651042); (5.85416666666667 : 5.56574375651042 : JumpStart); (6.02083333333333 : 5.56574375651042 : JumpEnd); (6.25 : 5.56574375651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/PHANMEM/PHANMEM_THUOCLOAIPM" />
-      <nodes>
-        <classShapeMoniker Id="78228795-ecc6-4294-b99c-f7bd33776429" />
-        <classShapeMoniker Id="46388b66-7f87-4fdc-a3d8-d28588fdf96e" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(5.46769230769231 : 6.98240397135417); (5.81607443490112 : 7.33078609856298 : JumpStart); (5.93392556509888 : 7.44863722876074 : JumpEnd); (6.0625 : 7.57721166366186); (6.0625 : 12.4815991210937); (6.25 : 12.4815991210937)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/PHANMEM/PHANMEM_KEYPM" />
-      <nodes>
-        <classShapeMoniker Id="78228795-ecc6-4294-b99c-f7bd33776429" />
-        <classShapeMoniker Id="481686f5-6365-44c9-b3ab-06082a328a76" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 5.59699625651042); (3.04166666666667 : 5.59699625651042 : JumpStart); (3.20833333333333 : 5.59699625651042 : JumpEnd); (3.5 : 5.59699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/NHAPHATHANH/NHAPHATHANH_PHANMEM" />
-      <nodes>
-        <classShapeMoniker Id="605901e5-eca7-44cf-875d-412b467a5c06" />
-        <classShapeMoniker Id="78228795-ecc6-4294-b99c-f7bd33776429" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 7.87653746153846); (3.125 : 7.50153746153846); (3.125 : 1.63544840494792); (3.5 : 1.63544840494792)]" fixedFrom="NotFixed" fixedTo="Algorithm">
-      <AssociationMoniker Name="/DALDataContext/TAIKHOAN/TAIKHOAN_HOADON" />
-      <nodes>
-        <classShapeMoniker Id="fa2ad84d-d091-41dd-bc3f-107d07ffd961" />
-        <classShapeMoniker Id="b06f6d93-0aef-45f6-8435-71951366481b" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 2.45959553570713); (5.9375 : 2.89709553570713); (5.9375 : 8.63544840494792); (5.97916666666667 : 8.63544840494792 : JumpStart); (6.14583333333333 : 8.63544840494792 : JumpEnd); (6.25 : 8.63544840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/HOADON/HOADON_THONGTINBOSUNG" />
-      <nodes>
-        <classShapeMoniker Id="b06f6d93-0aef-45f6-8435-71951366481b" />
-        <classShapeMoniker Id="07f449be-7443-4566-ab9f-26cced07a136" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 6.91778758673878); (5.81607443490112 : 7.2338620216399 : JumpStart); (5.99642556509888 : 7.41421315183766 : JumpEnd); (6.15625 : 7.57403758673878); (6.15625 : 8.16147220247396); (6.25 : 8.16147220247396)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/DALDataContext/PHANMEM/PHANMEM_THONGTINBOSUNG" />
-      <nodes>
-        <classShapeMoniker Id="78228795-ecc6-4294-b99c-f7bd33776429" />
-        <classShapeMoniker Id="07f449be-7443-4566-ab9f-26cced07a136" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="af70128c-af67-47f0-883e-c8d0df10d5fb" absoluteBounds="11.375, 4.125, 2, 1.1939925130208333">
+    <classShape Id="1332c379-48f4-4e04-8abc-ec3dcae0a50d" absoluteBounds="8.75, 8.75, 2, 1.1939925130208344">
       <DataClassMoniker Name="/DALDataContext/DANHMUC" />
       <nestedChildShapes>
-        <elementListCompartment Id="474ea63d-7b75-4b22-a048-e3f65fea4f7f" absoluteBounds="11.39, 4.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="5bd95f60-0819-43b5-b1e6-058f6d8ee278" absoluteBounds="8.765, 9.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
+    <classShape Id="ee2dc30e-8fd8-419d-b75a-47908c2f31bf" absoluteBounds="6.5, 1.875, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/DALDataContext/HOADON" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a80f713d-9386-43a3-9e0c-f7612e95d5f8" absoluteBounds="6.515, 2.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fdf24a0a-32cb-496c-bb05-b6c70bf8327c" absoluteBounds="6.25, 13.5, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/DALDataContext/KEYPM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="793ba45c-cc57-4b43-a437-d7862198c288" absoluteBounds="6.265, 13.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aeee1aaf-37c8-4fb5-948e-6103f97fc0eb" absoluteBounds="3.5, 9.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DALDataContext/LOAIPHANMEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a598b0f2-1c2c-4207-9452-13105a9ead45" absoluteBounds="3.515, 9.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="14414022-b6bf-4b45-a42e-973e872b4f7a" absoluteBounds="0.75, 6.125, 2, 1.1939925130208326">
+      <DataClassMoniker Name="/DALDataContext/NHAPHATHANH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a386f5a-99b9-4248-a7bf-3a8720c464b4" absoluteBounds="0.765, 6.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c6171e1-bf9b-4e51-bf1a-4157b12826ed" absoluteBounds="3.5, 5.375, 2, 2.7324039713541657">
+      <DataClassMoniker Name="/DALDataContext/PHANMEM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="049d5948-a0fb-45b6-853a-db6567ca1990" absoluteBounds="3.515, 5.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f44db3c-cdd8-43bd-a7b6-8a25ac35c757" absoluteBounds="3.75, 1.5, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/DALDataContext/TAIKHOAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9e01321-e656-476c-908e-a3c475894f7e" absoluteBounds="3.765, 1.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb199747-2bfd-4555-8719-055c6c64b8c5" absoluteBounds="9.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DALDataContext/TAIKHOAN_QUANTRI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="074d93b1-6fb5-4816-8510-6dd125e5281c" absoluteBounds="9.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cc604cd5-20b7-4596-a0cc-3a2f17c61b1d" absoluteBounds="9.25, 2.875, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/DALDataContext/THONGTINBOSUNG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c0f2041-5742-4203-a6e2-754a5c270570" absoluteBounds="9.265, 3.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.40625 : 3.64589680989583); (8.40625 : 6.3367465641276); (9.25 : 6.3367465641276)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/HOADON/HOADON_CTHD" />
+      <nodes>
+        <classShapeMoniker Id="ee2dc30e-8fd8-419d-b75a-47908c2f31bf" />
+        <classShapeMoniker Id="dea3d092-8785-452b-8fc2-f4cf803580b7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.421873 : 3.64589680989583); (7.421873 : 7); (8.5 : 7); (8.5 : 14.6164357158203); (9 : 14.6164357158203)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/HOADON/HOADON_CTHD_KEY" />
+      <nodes>
+        <classShapeMoniker Id="ee2dc30e-8fd8-419d-b75a-47908c2f31bf" />
+        <classShapeMoniker Id="750a9dc7-3a88-4dff-b4af-c8764bd1181e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 14.0340734863281); (8.41666666666667 : 14.0340734863281 : JumpStart); (8.58333333333333 : 14.0340734863281 : JumpEnd); (9 : 14.0340734863281)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/KEYPM/KEYPM_CTHD_KEY" />
+      <nodes>
+        <classShapeMoniker Id="fdf24a0a-32cb-496c-bb05-b6c70bf8327c" />
+        <classShapeMoniker Id="750a9dc7-3a88-4dff-b4af-c8764bd1181e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.72199625651042); (5.79166666666667 : 9.72199625651042 : JumpStart); (5.95833333333333 : 9.72199625651042 : JumpEnd); (7.25 : 9.72199625651042); (7.25 : 8.31899251302083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/LOAIPHANMEM/LOAIPHANMEM_THUOCLOAIPM" />
+      <nodes>
+        <classShapeMoniker Id="aeee1aaf-37c8-4fb5-948e-6103f97fc0eb" />
+        <classShapeMoniker Id="91413741-2c51-404b-92b9-7ab82ad028a9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.61620198567708); (6.25 : 7.61620198567708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/PHANMEM/PHANMEM_THUOCLOAIPM" />
+      <nodes>
+        <classShapeMoniker Id="8c6171e1-bf9b-4e51-bf1a-4157b12826ed" />
+        <classShapeMoniker Id="91413741-2c51-404b-92b9-7ab82ad028a9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.86099812825521); (7.33853966666667 : 6.86099812825521 : JumpStart); (7.50520633333333 : 6.86099812825521 : JumpEnd); (9.25 : 6.86099812825521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/PHANMEM/PHANMEM_CTHD" />
+      <nodes>
+        <classShapeMoniker Id="8c6171e1-bf9b-4e51-bf1a-4157b12826ed" />
+        <classShapeMoniker Id="dea3d092-8785-452b-8fc2-f4cf803580b7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.10740397135417); (5.875 : 8.48240397135417); (5.875 : 14.4815991210937); (6.25 : 14.4815991210937)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/PHANMEM/PHANMEM_KEYPM" />
+      <nodes>
+        <classShapeMoniker Id="8c6171e1-bf9b-4e51-bf1a-4157b12826ed" />
+        <classShapeMoniker Id="fdf24a0a-32cb-496c-bb05-b6c70bf8327c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.72199625651042); (3.5 : 6.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/NHAPHATHANH/NHAPHATHANH_PHANMEM" />
+      <nodes>
+        <classShapeMoniker Id="14414022-b6bf-4b45-a42e-973e872b4f7a" />
+        <classShapeMoniker Id="8c6171e1-bf9b-4e51-bf1a-4157b12826ed" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 2.76044840494792); (6.5 : 2.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/TAIKHOAN/TAIKHOAN_HOADON" />
+      <nodes>
+        <classShapeMoniker Id="7f44db3c-cdd8-43bd-a7b6-8a25ac35c757" />
+        <classShapeMoniker Id="ee2dc30e-8fd8-419d-b75a-47908c2f31bf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 3.26044840494792); (9.25 : 3.26044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/HOADON/HOADON_THONGTINBOSUNG" />
+      <nodes>
+        <classShapeMoniker Id="ee2dc30e-8fd8-419d-b75a-47908c2f31bf" />
+        <classShapeMoniker Id="cc604cd5-20b7-4596-a0cc-3a2f17c61b1d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.59375 : 5.375); (3.59375 : 4.30130126953125); (7.33853966666667 : 4.30130126953125 : JumpStart); (7.50520633333333 : 4.30130126953125 : JumpEnd); (8.32291666666667 : 4.30130126953125 : JumpStart); (8.48958333333333 : 4.30130126953125 : JumpEnd); (9.25 : 4.30130126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/PHANMEM/PHANMEM_THONGTINBOSUNG" />
+      <nodes>
+        <classShapeMoniker Id="8c6171e1-bf9b-4e51-bf1a-4157b12826ed" />
+        <classShapeMoniker Id="cc604cd5-20b7-4596-a0cc-3a2f17c61b1d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1fd12cb9-35ce-459c-87d1-71ab5581d8e1" absoluteBounds="13, 7.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DALDataContext/Banner" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac5d0304-e2fa-4edc-b332-51133305b614" absoluteBounds="13.015, 7.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.59375); (7.33853966666667 : 5.59375 : JumpStart); (7.50520633333333 : 5.59375 : JumpEnd); (8.32291666666667 : 5.59375 : JumpStart); (8.48958333333333 : 5.59375 : JumpEnd); (14 : 5.59375); (14 : 7.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DALDataContext/PHANMEM/PHANMEM_Banner" />
+      <nodes>
+        <classShapeMoniker Id="8c6171e1-bf9b-4e51-bf1a-4157b12826ed" />
+        <classShapeMoniker Id="1fd12cb9-35ce-459c-87d1-71ab5581d8e1" />
+      </nodes>
+    </associationConnector>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

@@ -61,6 +61,61 @@
           }
         }
       },
+      "cef.redist.x64/119.1.2": {
+        "type": "package",
+        "build": {
+          "buildTransitive/cef.redist.x64.props": {}
+        }
+      },
+      "cef.redist.x86/119.1.2": {
+        "type": "package",
+        "build": {
+          "buildTransitive/cef.redist.x86.props": {}
+        }
+      },
+      "CefSharp.Common/119.1.20": {
+        "type": "package",
+        "dependencies": {
+          "cef.redist.x64": "[119.1.2]",
+          "cef.redist.x86": "[119.1.2]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.Core.dll": {
+            "related": ".pdb;.XML"
+          },
+          "lib/net462/CefSharp.dll": {
+            "related": ".Core.pdb;.Core.XML;.pdb;.XML"
+          }
+        },
+        "build": {
+          "buildTransitive/CefSharp.Common.props": {},
+          "buildTransitive/CefSharp.Common.targets": {}
+        }
+      },
+      "CefSharp.WinForms/119.1.20": {
+        "type": "package",
+        "dependencies": {
+          "CefSharp.Common": "[119.1.20]"
+        },
+        "compile": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net462/CefSharp.WinForms.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
       "ExcelDataReader/3.6.0": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1732,1628 +1787,6 @@
           "bin/placeholder/DAL.dll": {}
         }
       }
-    },
-    ".NETFramework,Version=v4.8/win7-x86": {
-      "Azure.Core/1.25.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
-          "System.Diagnostics.DiagnosticSource": "4.6.0",
-          "System.Memory.Data": "1.0.2",
-          "System.Net.Http": "4.3.4",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.7.2",
-          "System.Threading.Tasks.Extensions": "4.5.4"
-        },
-        "compile": {
-          "lib/net461/Azure.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Azure.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Azure.Identity/1.7.0": {
-        "type": "package",
-        "dependencies": {
-          "Azure.Core": "1.25.0",
-          "Microsoft.Identity.Client": "4.39.0",
-          "Microsoft.Identity.Client.Extensions.Msal": "2.19.3",
-          "System.Memory": "4.5.4",
-          "System.Security.Cryptography.ProtectedData": "4.7.0",
-          "System.Text.Json": "4.7.2",
-          "System.Threading.Tasks.Extensions": "4.5.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/Azure.Identity.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Azure.Identity.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "BitMiracle.LibTiff.NET/2.4.649": {
-        "type": "package",
-        "compile": {
-          "lib/net40/BitMiracle.LibTiff.NET.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net40/BitMiracle.LibTiff.NET.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "ExcelDataReader/3.6.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "System.Data",
-          "System.IO.Compression"
-        ],
-        "compile": {
-          "lib/net45/ExcelDataReader.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/ExcelDataReader.dll": {
-            "related": ".pdb;.xml"
-          }
-        }
-      },
-      "FirebaseAuthentication.net/4.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.2"
-        },
-        "compile": {
-          "lib/netstandard2.0/Firebase.Auth.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Firebase.Auth.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "FirebaseStorage.net/1.0.3": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "9.0.1"
-        },
-        "compile": {
-          "lib/netstandard1.1/Firebase.Storage.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.1/Firebase.Storage.dll": {}
-        }
-      },
-      "IronSoftware.Common/2023.11.12": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Binder": "6.0.0",
-          "Microsoft.Extensions.Configuration.Json": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
-          "System.Configuration.ConfigurationManager": "6.0.0",
-          "System.Memory": "4.5.5"
-        },
-        "compile": {
-          "lib/netstandard2.0/IronSoftware.Abstractions.dll": {
-            "related": ".pdb"
-          },
-          "lib/netstandard2.0/IronSoftware.Logger.dll": {
-            "related": ".pdb"
-          },
-          "lib/netstandard2.0/IronSoftware.Shared.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/IronSoftware.Abstractions.dll": {
-            "related": ".pdb"
-          },
-          "lib/netstandard2.0/IronSoftware.Logger.dll": {
-            "related": ".pdb"
-          },
-          "lib/netstandard2.0/IronSoftware.Shared.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "IronSoftware.System.Drawing/2023.11.1": {
-        "type": "package",
-        "dependencies": {
-          "BitMiracle.LibTiff.NET": "2.4.649",
-          "SixLabors.ImageSharp": "2.1.6",
-          "SixLabors.ImageSharp.Drawing": "1.0.0",
-          "System.Memory": "4.5.5"
-        },
-        "compile": {
-          "lib/netstandard2.0/IronSoftware.Drawing.Common.dll": {
-            "related": ".deps.json;.pdb;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/IronSoftware.Drawing.Common.dll": {
-            "related": ".deps.json;.pdb;.xml"
-          }
-        }
-      },
-      "IronXL.Excel/2023.11.12": {
-        "type": "package",
-        "dependencies": {
-          "IronSoftware.Common": "2023.11.12",
-          "IronSoftware.System.Drawing": "2023.11.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/IronXL.dll": {
-            "related": ".dll.config;.xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/IronXL.dll": {
-            "related": ".dll.config;.xml"
-          }
-        }
-      },
-      "Krypton.Toolkit/70.22.11.312": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-        ],
-        "compile": {
-          "lib/net48/Krypton.Toolkit.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net48/Krypton.Toolkit.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Threading.Tasks.Extensions": "4.5.4"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Data.SqlClient/5.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Azure.Identity": "1.7.0",
-          "Microsoft.Data.SqlClient.SNI": "5.1.0",
-          "Microsoft.Identity.Client": "4.47.2",
-          "Microsoft.IdentityModel.JsonWebTokens": "6.24.0",
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "6.24.0",
-          "System.Buffers": "4.5.1",
-          "System.Configuration.ConfigurationManager": "6.0.1",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
-          "System.Text.Encodings.Web": "6.0.0"
-        },
-        "frameworkAssemblies": [
-          "System.Data",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net462/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb;.xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net462/Microsoft.Data.SqlClient.dll": {
-            "related": ".pdb"
-          }
-        },
-        "resource": {
-          "lib/net462/de/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net462/es/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net462/fr/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net462/it/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net462/ja/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "ja"
-          },
-          "lib/net462/ko/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "ko"
-          },
-          "lib/net462/pt-BR/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net462/ru/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net462/zh-Hans/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "zh-Hans"
-          },
-          "lib/net462/zh-Hant/Microsoft.Data.SqlClient.resources.dll": {
-            "locale": "zh-Hant"
-          }
-        }
-      },
-      "Microsoft.Data.SqlClient.SNI/5.1.0": {
-        "type": "package",
-        "build": {
-          "buildTransitive/net462/Microsoft.Data.SqlClient.SNI.targets": {}
-        }
-      },
-      "Microsoft.Extensions.Configuration/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Primitives": "6.0.0"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.Configuration.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.Abstractions/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "6.0.0",
-          "System.ValueTuple": "4.5.0"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.Binder/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Extensions.Configuration.Binder.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.Configuration.Binder.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "6.0.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Physical": "6.0.0",
-          "Microsoft.Extensions.Primitives": "6.0.0"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Extensions.Configuration.FileExtensions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.Configuration.FileExtensions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Configuration.Json/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration": "6.0.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Configuration.FileExtensions": "6.0.0",
-          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
-          "System.Memory": "4.5.4",
-          "System.Text.Json": "6.0.0"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Extensions.Configuration.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.Configuration.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Abstractions/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Primitives": "6.0.0"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.FileProviders.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.FileProviders.Physical/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
-          "Microsoft.Extensions.FileSystemGlobbing": "6.0.0",
-          "Microsoft.Extensions.Primitives": "6.0.0",
-          "System.Security.Cryptography.Algorithms": "4.3.1"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Extensions.FileProviders.Physical.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.FileProviders.Physical.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net461/Microsoft.Extensions.FileSystemGlobbing.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.FileSystemGlobbing.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Memory": "4.5.4"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "Microsoft.Extensions.Primitives/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
-        "compile": {
-          "lib/net461/Microsoft.Extensions.Primitives.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Extensions.Primitives.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client/4.47.2": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "6.22.0"
-        },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.Core",
-          "System.Data",
-          "System.Data.DataSetExtensions",
-          "System.Drawing",
-          "System.IdentityModel",
-          "System.Net.Http",
-          "System.Windows.Forms",
-          "System.Xml",
-          "System.Xml.Linq"
-        ],
-        "compile": {
-          "lib/net461/Microsoft.Identity.Client.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/Microsoft.Identity.Client.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Identity.Client.Extensions.Msal/2.19.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Client": "4.38.0"
-        },
-        "frameworkAssemblies": [
-          "System.Security"
-        ],
-        "compile": {
-          "lib/net45/Microsoft.Identity.Client.Extensions.Msal.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/Microsoft.Identity.Client.Extensions.Msal.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Abstractions/6.24.0": {
-        "type": "package",
-        "compile": {
-          "lib/net472/Microsoft.IdentityModel.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/Microsoft.IdentityModel.Abstractions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.JsonWebTokens/6.24.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Tokens": "6.24.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Json": "4.7.2"
-        },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/Microsoft.IdentityModel.JsonWebTokens.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Logging/6.24.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Abstractions": "6.24.0"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net472/Microsoft.IdentityModel.Logging.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/Microsoft.IdentityModel.Logging.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Protocols/6.24.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Logging": "6.24.0",
-          "Microsoft.IdentityModel.Tokens": "6.24.0"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net472/Microsoft.IdentityModel.Protocols.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/Microsoft.IdentityModel.Protocols.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Protocols.OpenIdConnect/6.24.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Protocols": "6.24.0",
-          "System.IdentityModel.Tokens.Jwt": "6.24.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Json": "4.7.2"
-        },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
-        "compile": {
-          "lib/net472/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.IdentityModel.Tokens/6.24.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.Logging": "6.24.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Json": "4.7.2"
-        },
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "System",
-          "System.Core"
-        ],
-        "compile": {
-          "lib/net472/Microsoft.IdentityModel.Tokens.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/Microsoft.IdentityModel.Tokens.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.NETCore.Platforms/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.Win32.Primitives/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/Microsoft.Win32.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net46/Microsoft.Win32.Primitives.dll": {}
-        }
-      },
-      "NETStandard.Library/1.6.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.Win32.Primitives": "4.3.0",
-          "System.AppContext": "4.3.0",
-          "System.Collections": "4.3.0",
-          "System.Collections.Concurrent": "4.3.0",
-          "System.Console": "4.3.0",
-          "System.Diagnostics.Debug": "4.3.0",
-          "System.Diagnostics.Tools": "4.3.0",
-          "System.Diagnostics.Tracing": "4.3.0",
-          "System.Globalization": "4.3.0",
-          "System.Globalization.Calendars": "4.3.0",
-          "System.IO": "4.3.0",
-          "System.IO.Compression": "4.3.0",
-          "System.IO.Compression.ZipFile": "4.3.0",
-          "System.IO.FileSystem": "4.3.0",
-          "System.IO.FileSystem.Primitives": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Linq.Expressions": "4.3.0",
-          "System.Net.Http": "4.3.0",
-          "System.Net.Primitives": "4.3.0",
-          "System.Net.Sockets": "4.3.0",
-          "System.ObjectModel": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Extensions": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Resources.ResourceManager": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Runtime.Handles": "4.3.0",
-          "System.Runtime.InteropServices": "4.3.0",
-          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
-          "System.Runtime.Numerics": "4.3.0",
-          "System.Security.Cryptography.Algorithms": "4.3.0",
-          "System.Security.Cryptography.Encoding": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.3.0",
-          "System.Security.Cryptography.X509Certificates": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Text.Encoding.Extensions": "4.3.0",
-          "System.Text.RegularExpressions": "4.3.0",
-          "System.Threading": "4.3.0",
-          "System.Threading.Tasks": "4.3.0",
-          "System.Threading.Timer": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0",
-          "System.Xml.XDocument": "4.3.0"
-        }
-      },
-      "Newtonsoft.Json/13.0.2": {
-        "type": "package",
-        "compile": {
-          "lib/net45/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net45/Newtonsoft.Json.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SixLabors.Fonts/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Memory": "4.5.4",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/SixLabors.Fonts.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SixLabors.ImageSharp/2.1.6": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Memory": "4.5.4",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Encoding.CodePages": "5.0.0"
-        },
-        "compile": {
-          "lib/net472/SixLabors.ImageSharp.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/SixLabors.ImageSharp.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SixLabors.ImageSharp.Drawing/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "SixLabors.Fonts": "1.0.0",
-          "SixLabors.ImageSharp": "2.1.5"
-        },
-        "compile": {
-          "lib/net472/SixLabors.ImageSharp.Drawing.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/SixLabors.ImageSharp.Drawing.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.AppContext/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net463/System.AppContext.dll": {}
-        },
-        "runtime": {
-          "lib/net463/System.AppContext.dll": {}
-        }
-      },
-      "System.Buffers/4.5.1": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net45/System.Buffers.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Buffers.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Collections/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "System.Core"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Collections.Concurrent/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Configuration.ConfigurationManager/6.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Permissions": "6.0.0"
-        },
-        "frameworkAssemblies": [
-          "System.Configuration"
-        ],
-        "compile": {
-          "lib/net461/System.Configuration.ConfigurationManager.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net461/System.Configuration.ConfigurationManager.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Console/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Console.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Console.dll": {}
-        }
-      },
-      "System.Diagnostics.Debug/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Diagnostics.DiagnosticSource/4.6.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.3"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "lib/net46/System.Diagnostics.DiagnosticSource.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net46/System.Diagnostics.DiagnosticSource.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Diagnostics.Tools/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Diagnostics.Tracing/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net462/System.Diagnostics.Tracing.dll": {}
-        },
-        "runtime": {
-          "lib/net462/System.Diagnostics.Tracing.dll": {}
-        }
-      },
-      "System.Globalization/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Globalization.Calendars/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Globalization.Calendars.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Globalization.Calendars.dll": {}
-        }
-      },
-      "System.IdentityModel.Tokens.Jwt/6.24.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.IdentityModel.JsonWebTokens": "6.24.0",
-          "Microsoft.IdentityModel.Tokens": "6.24.0"
-        },
-        "compile": {
-          "lib/net472/System.IdentityModel.Tokens.Jwt.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/System.IdentityModel.Tokens.Jwt.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.IO/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net462/System.IO.dll": {}
-        },
-        "runtime": {
-          "lib/net462/System.IO.dll": {}
-        }
-      },
-      "System.IO.Compression/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.IO.Compression.dll": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/net46/System.IO.Compression.dll": {}
-        }
-      },
-      "System.IO.Compression.ZipFile/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.IO.Compression.FileSystem",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.IO.Compression.ZipFile.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.IO.Compression.ZipFile.dll": {}
-        }
-      },
-      "System.IO.FileSystem/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.IO.FileSystem.Primitives": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.IO.FileSystem.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.IO.FileSystem.dll": {}
-        }
-      },
-      "System.IO.FileSystem.Primitives/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.IO.FileSystem.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.IO.FileSystem.Primitives.dll": {}
-        }
-      },
-      "System.Linq/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net463/System.Linq.dll": {}
-        },
-        "runtime": {
-          "lib/net463/System.Linq.dll": {}
-        }
-      },
-      "System.Linq.Expressions/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net463/System.Linq.Expressions.dll": {}
-        },
-        "runtime": {
-          "lib/net463/System.Linq.Expressions.dll": {}
-        }
-      },
-      "System.Memory/4.5.5": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "lib/net461/System.Memory.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Memory.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Memory.Data/1.0.2": {
-        "type": "package",
-        "dependencies": {
-          "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.6.0"
-        },
-        "compile": {
-          "lib/net461/System.Memory.Data.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Memory.Data.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Net.Http/4.3.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Cryptography.X509Certificates": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Net.Http.dll": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/net46/System.Net.Http.dll": {}
-        }
-      },
-      "System.Net.Primitives/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Net.Sockets/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Net.Sockets.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Net.Sockets.dll": {}
-        }
-      },
-      "System.Numerics.Vectors/4.5.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Numerics",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Numerics.Vectors.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net46/System.Numerics.Vectors.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.ObjectModel/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Reflection/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net462/System.Reflection.dll": {}
-        },
-        "runtime": {
-          "lib/net462/System.Reflection.dll": {}
-        }
-      },
-      "System.Reflection.Extensions/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Reflection.Primitives/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Resources.ResourceManager/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Runtime/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "System.ComponentModel.Composition",
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net462/System.Runtime.dll": {}
-        },
-        "runtime": {
-          "lib/net462/System.Runtime.dll": {}
-        }
-      },
-      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Runtime.Extensions/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net462/System.Runtime.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/net462/System.Runtime.Extensions.dll": {}
-        }
-      },
-      "System.Runtime.Handles/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Core"
-        ],
-        "compile": {
-          "ref/net46/_._": {}
-        },
-        "runtime": {
-          "lib/net46/_._": {}
-        }
-      },
-      "System.Runtime.InteropServices/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net463/System.Runtime.InteropServices.dll": {}
-        },
-        "runtime": {
-          "lib/net463/System.Runtime.InteropServices.dll": {}
-        }
-      },
-      "System.Runtime.InteropServices.RuntimeInformation/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {}
-        }
-      },
-      "System.Runtime.Numerics/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Numerics"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Security.AccessControl/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Principal.Windows": "5.0.0"
-        },
-        "compile": {
-          "lib/net461/System.Security.AccessControl.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net461/System.Security.AccessControl.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Security.Cryptography.Algorithms/4.3.1": {
-        "type": "package",
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Runtime": "4.3.0",
-          "System.Security.Cryptography.Encoding": "4.3.0",
-          "System.Security.Cryptography.Primitives": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net463/System.Security.Cryptography.Algorithms.dll": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/net463/System.Security.Cryptography.Algorithms.dll": {}
-        }
-      },
-      "System.Security.Cryptography.Encoding/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Security.Cryptography.Encoding.dll": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/net46/System.Security.Cryptography.Encoding.dll": {}
-        }
-      },
-      "System.Security.Cryptography.Primitives/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Security.Cryptography.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Security.Cryptography.Primitives.dll": {}
-        }
-      },
-      "System.Security.Cryptography.ProtectedData/4.7.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Security",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net461/System.Security.Cryptography.ProtectedData.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net461/System.Security.Cryptography.ProtectedData.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Security.Cryptography.X509Certificates/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.Cryptography.Algorithms": "4.3.0",
-          "System.Security.Cryptography.Encoding": "4.3.0"
-        },
-        "frameworkAssemblies": [
-          "System",
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net461/System.Security.Cryptography.X509Certificates.dll": {}
-        },
-        "runtime": {
-          "runtimes/win/lib/net461/System.Security.Cryptography.X509Certificates.dll": {}
-        }
-      },
-      "System.Security.Permissions/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Security.AccessControl": "6.0.0"
-        },
-        "frameworkAssemblies": [
-          "System.Configuration",
-          "System.Data.OracleClient",
-          "System.Net",
-          "System.Security",
-          "System.ServiceProcess",
-          "System.Transactions",
-          "WindowsBase"
-        ],
-        "compile": {
-          "lib/net461/System.Security.Permissions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net461/System.Security.Permissions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Security.Principal.Windows/5.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net461/System.Security.Principal.Windows.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Text.Encoding/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Text.Encoding.CodePages/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0"
-        },
-        "frameworkAssemblies": [
-          "System.Core",
-          "mscorlib"
-        ],
-        "compile": {
-          "lib/net461/System.Text.Encoding.CodePages.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Text.Encoding.Extensions/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Text.Encodings.Web/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Buffers": "4.5.1",
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
-        "compile": {
-          "lib/net461/System.Text.Encodings.Web.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Text.Encodings.Web.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Text.Json/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
-          "System.Buffers": "4.5.1",
-          "System.Memory": "4.5.4",
-          "System.Numerics.Vectors": "4.5.0",
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Text.Encodings.Web": "6.0.0",
-          "System.Threading.Tasks.Extensions": "4.5.4",
-          "System.ValueTuple": "4.5.0"
-        },
-        "compile": {
-          "lib/net461/System.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/_._": {}
-        }
-      },
-      "System.Text.RegularExpressions/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net463/System.Text.RegularExpressions.dll": {}
-        },
-        "runtime": {
-          "lib/net463/System.Text.RegularExpressions.dll": {}
-        }
-      },
-      "System.Threading/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System",
-          "System.Core"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Threading.Tasks/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Core"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "System.Threading.Tasks.Extensions/4.5.4": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "4.5.3"
-        },
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net461/System.Threading.Tasks.Extensions.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Threading.Timer/4.3.0": {
-        "type": "package",
-        "compile": {
-          "ref/net451/_._": {}
-        },
-        "runtime": {
-          "lib/net451/_._": {}
-        }
-      },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net47/System.ValueTuple.dll": {}
-        },
-        "runtime": {
-          "lib/net47/System.ValueTuple.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "System.Xml.ReaderWriter/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Xml",
-          "mscorlib"
-        ],
-        "compile": {
-          "ref/net46/System.Xml.ReaderWriter.dll": {}
-        },
-        "runtime": {
-          "lib/net46/System.Xml.ReaderWriter.dll": {}
-        }
-      },
-      "System.Xml.XDocument/4.3.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System.Xml.Linq"
-        ],
-        "compile": {
-          "ref/net45/_._": {}
-        },
-        "runtime": {
-          "lib/net45/_._": {}
-        }
-      },
-      "CustomControls/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.8",
-        "dependencies": {
-          "FirebaseStorage.net": "1.0.3",
-          "Krypton.Toolkit": "70.22.11.312"
-        },
-        "compile": {
-          "bin/placeholder/CustomControls.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/CustomControls.dll": {}
-        }
-      },
-      "DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETFramework,Version=v4.8",
-        "dependencies": {
-          "FirebaseStorage.net": "1.0.3",
-          "IronXL.Excel": "2023.11.12",
-          "Microsoft.Data.SqlClient": "5.1.1"
-        },
-        "compile": {
-          "bin/placeholder/DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DAL.dll": {}
-        }
-      }
     }
   },
   "libraries": {
@@ -3408,6 +1841,772 @@
         "lib/net40/BitMiracle.LibTiff.NET.xml",
         "lib/netstandard2.0/BitMiracle.LibTiff.NET.dll",
         "lib/netstandard2.0/BitMiracle.LibTiff.NET.xml"
+      ]
+    },
+    "cef.redist.x64/119.1.2": {
+      "sha512": "AbAHkkfjwn6jWsAemYruIyN5inPrPlfvKfnyJImy6S9aIEm2eEKws7wcSZWlhIZcFUQADfbyo2O7hZaZ0egPiQ==",
+      "type": "package",
+      "path": "cef.redist.x64/119.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CEF/LICENSE.txt",
+        "CEF/README.txt",
+        "CEF/chrome_100_percent.pak",
+        "CEF/chrome_200_percent.pak",
+        "CEF/chrome_elf.dll",
+        "CEF/d3dcompiler_47.dll",
+        "CEF/icudtl.dat",
+        "CEF/libEGL.dll",
+        "CEF/libGLESv2.dll",
+        "CEF/libcef.dll",
+        "CEF/locales/af.pak",
+        "CEF/locales/am.pak",
+        "CEF/locales/ar.pak",
+        "CEF/locales/bg.pak",
+        "CEF/locales/bn.pak",
+        "CEF/locales/ca.pak",
+        "CEF/locales/cs.pak",
+        "CEF/locales/da.pak",
+        "CEF/locales/de.pak",
+        "CEF/locales/el.pak",
+        "CEF/locales/en-GB.pak",
+        "CEF/locales/en-US.pak",
+        "CEF/locales/es-419.pak",
+        "CEF/locales/es.pak",
+        "CEF/locales/et.pak",
+        "CEF/locales/fa.pak",
+        "CEF/locales/fi.pak",
+        "CEF/locales/fil.pak",
+        "CEF/locales/fr.pak",
+        "CEF/locales/gu.pak",
+        "CEF/locales/he.pak",
+        "CEF/locales/hi.pak",
+        "CEF/locales/hr.pak",
+        "CEF/locales/hu.pak",
+        "CEF/locales/id.pak",
+        "CEF/locales/it.pak",
+        "CEF/locales/ja.pak",
+        "CEF/locales/kn.pak",
+        "CEF/locales/ko.pak",
+        "CEF/locales/lt.pak",
+        "CEF/locales/lv.pak",
+        "CEF/locales/ml.pak",
+        "CEF/locales/mr.pak",
+        "CEF/locales/ms.pak",
+        "CEF/locales/nb.pak",
+        "CEF/locales/nl.pak",
+        "CEF/locales/pl.pak",
+        "CEF/locales/pt-BR.pak",
+        "CEF/locales/pt-PT.pak",
+        "CEF/locales/ro.pak",
+        "CEF/locales/ru.pak",
+        "CEF/locales/sk.pak",
+        "CEF/locales/sl.pak",
+        "CEF/locales/sr.pak",
+        "CEF/locales/sv.pak",
+        "CEF/locales/sw.pak",
+        "CEF/locales/ta.pak",
+        "CEF/locales/te.pak",
+        "CEF/locales/th.pak",
+        "CEF/locales/tr.pak",
+        "CEF/locales/uk.pak",
+        "CEF/locales/ur.pak",
+        "CEF/locales/vi.pak",
+        "CEF/locales/zh-CN.pak",
+        "CEF/locales/zh-TW.pak",
+        "CEF/resources.pak",
+        "CEF/snapshot_blob.bin",
+        "CEF/v8_context_snapshot.bin",
+        "CEF/vk_swiftshader.dll",
+        "CEF/vk_swiftshader_icd.json",
+        "CEF/vulkan-1.dll",
+        "LICENSE.txt",
+        "build/cef.redist.x64.props",
+        "buildTransitive/cef.redist.x64.props",
+        "cef.redist.x64.119.1.2.nupkg.sha512",
+        "cef.redist.x64.nuspec"
+      ]
+    },
+    "cef.redist.x86/119.1.2": {
+      "sha512": "+VsGDocYm875qp+90YVZC1h4NFajpaYXPqSOE8l7jAb/CmX+fUQVm2Rxc7U7vUCfMYQpJ1GfDL98YNE1PnF/uQ==",
+      "type": "package",
+      "path": "cef.redist.x86/119.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CEF/LICENSE.txt",
+        "CEF/README.txt",
+        "CEF/chrome_100_percent.pak",
+        "CEF/chrome_200_percent.pak",
+        "CEF/chrome_elf.dll",
+        "CEF/d3dcompiler_47.dll",
+        "CEF/icudtl.dat",
+        "CEF/libEGL.dll",
+        "CEF/libGLESv2.dll",
+        "CEF/libcef.dll",
+        "CEF/locales/af.pak",
+        "CEF/locales/am.pak",
+        "CEF/locales/ar.pak",
+        "CEF/locales/bg.pak",
+        "CEF/locales/bn.pak",
+        "CEF/locales/ca.pak",
+        "CEF/locales/cs.pak",
+        "CEF/locales/da.pak",
+        "CEF/locales/de.pak",
+        "CEF/locales/el.pak",
+        "CEF/locales/en-GB.pak",
+        "CEF/locales/en-US.pak",
+        "CEF/locales/es-419.pak",
+        "CEF/locales/es.pak",
+        "CEF/locales/et.pak",
+        "CEF/locales/fa.pak",
+        "CEF/locales/fi.pak",
+        "CEF/locales/fil.pak",
+        "CEF/locales/fr.pak",
+        "CEF/locales/gu.pak",
+        "CEF/locales/he.pak",
+        "CEF/locales/hi.pak",
+        "CEF/locales/hr.pak",
+        "CEF/locales/hu.pak",
+        "CEF/locales/id.pak",
+        "CEF/locales/it.pak",
+        "CEF/locales/ja.pak",
+        "CEF/locales/kn.pak",
+        "CEF/locales/ko.pak",
+        "CEF/locales/lt.pak",
+        "CEF/locales/lv.pak",
+        "CEF/locales/ml.pak",
+        "CEF/locales/mr.pak",
+        "CEF/locales/ms.pak",
+        "CEF/locales/nb.pak",
+        "CEF/locales/nl.pak",
+        "CEF/locales/pl.pak",
+        "CEF/locales/pt-BR.pak",
+        "CEF/locales/pt-PT.pak",
+        "CEF/locales/ro.pak",
+        "CEF/locales/ru.pak",
+        "CEF/locales/sk.pak",
+        "CEF/locales/sl.pak",
+        "CEF/locales/sr.pak",
+        "CEF/locales/sv.pak",
+        "CEF/locales/sw.pak",
+        "CEF/locales/ta.pak",
+        "CEF/locales/te.pak",
+        "CEF/locales/th.pak",
+        "CEF/locales/tr.pak",
+        "CEF/locales/uk.pak",
+        "CEF/locales/ur.pak",
+        "CEF/locales/vi.pak",
+        "CEF/locales/zh-CN.pak",
+        "CEF/locales/zh-TW.pak",
+        "CEF/resources.pak",
+        "CEF/snapshot_blob.bin",
+        "CEF/v8_context_snapshot.bin",
+        "CEF/vk_swiftshader.dll",
+        "CEF/vk_swiftshader_icd.json",
+        "CEF/vulkan-1.dll",
+        "LICENSE.txt",
+        "build/cef.redist.x86.props",
+        "buildTransitive/cef.redist.x86.props",
+        "cef.redist.x86.119.1.2.nupkg.sha512",
+        "cef.redist.x86.nuspec"
+      ]
+    },
+    "CefSharp.Common/119.1.20": {
+      "sha512": "4bBYnrtNIsMkm9anVWEKFe9lyVfyRWVPgkxgpt4j7sLJAqIb2wSF77UdqQ+kRJlv67ETVlJwDRyn73O8JAbFHA==",
+      "type": "package",
+      "path": "cefsharp.common/119.1.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.Core.dll",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.Core.pdb",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.exe",
+        "CefSharp/x64/CefSharp.BrowserSubprocess.pdb",
+        "CefSharp/x64/CefSharp.Core.Runtime.dll",
+        "CefSharp/x64/CefSharp.Core.Runtime.pdb",
+        "CefSharp/x64/CefSharp.Core.Runtime.xml",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.Core.dll",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.Core.pdb",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.exe",
+        "CefSharp/x86/CefSharp.BrowserSubprocess.pdb",
+        "CefSharp/x86/CefSharp.Core.Runtime.dll",
+        "CefSharp/x86/CefSharp.Core.Runtime.pdb",
+        "CefSharp/x86/CefSharp.Core.Runtime.xml",
+        "build/CefSharp.Common.props",
+        "build/CefSharp.Common.targets",
+        "build/app.config.x64.transform",
+        "build/app.config.x86.transform",
+        "buildTransitive/CefSharp.Common.props",
+        "buildTransitive/CefSharp.Common.targets",
+        "cefsharp.common.119.1.20.nupkg.sha512",
+        "cefsharp.common.nuspec",
+        "lib/net462/CefSharp.Core.XML",
+        "lib/net462/CefSharp.Core.dll",
+        "lib/net462/CefSharp.Core.pdb",
+        "lib/net462/CefSharp.XML",
+        "lib/net462/CefSharp.dll",
+        "lib/net462/CefSharp.pdb",
+        "src/CefSharp.BrowserSubprocess.Core/AssemblyInfo.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodCallback.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodCallback.h",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodHandler.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncMethodWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncObjectWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Async/JavascriptAsyncObjectWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/BindObjectAsyncHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/BrowserSubprocessExecutable.h",
+        "src/CefSharp.BrowserSubprocess.Core/Cef.h",
+        "src/CefSharp.BrowserSubprocess.Core/CefAppUnmanagedWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/CefAppUnmanagedWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/CefBrowserWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptCallbackRegistry.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptCallbackRegistry.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptCallbackWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodHandler.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptMethodWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptObjectWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptObjectWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPostMessageHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPromiseHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPromiseResolverCatch.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPromiseResolverThen.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPropertyHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPropertyWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptPropertyWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptRootObjectWrapper.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/JavascriptRootObjectWrapper.h",
+        "src/CefSharp.BrowserSubprocess.Core/RegisterBoundObjectHandler.h",
+        "src/CefSharp.BrowserSubprocess.Core/RegisterBoundObjectRegistry.h",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/JsObjectsSerialization.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/JsObjectsSerialization.h",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/V8Serialization.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Serialization/V8Serialization.h",
+        "src/CefSharp.BrowserSubprocess.Core/Stdafx.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Stdafx.h",
+        "src/CefSharp.BrowserSubprocess.Core/SubProcess.h",
+        "src/CefSharp.BrowserSubprocess.Core/SubProcessApp.h",
+        "src/CefSharp.BrowserSubprocess.Core/TypeUtils.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/TypeUtils.h",
+        "src/CefSharp.BrowserSubprocess.Core/WcfBrowserSubprocessExecutable.h",
+        "src/CefSharp.BrowserSubprocess.Core/WcfEnabledSubProcess.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/WcfEnabledSubProcess.h",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Browser.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Browser.h",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Frame.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/Frame.h",
+        "src/CefSharp.BrowserSubprocess.Core/Wrapper/V8Context.h",
+        "src/CefSharp.BrowserSubprocess.Core/obj/Win32/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/obj/x64/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.BrowserSubprocess.Core/resource.h",
+        "src/CefSharp.BrowserSubprocess.Core/vcclr_local.h",
+        "src/CefSharp.BrowserSubprocess/Program.cs",
+        "src/CefSharp.BrowserSubprocess/Program.netcore.cs",
+        "src/CefSharp.BrowserSubprocess/Properties/AssemblyInfo.cs",
+        "src/CefSharp.BrowserSubprocess/obj/x64/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs",
+        "src/CefSharp.BrowserSubprocess/obj/x86/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs",
+        "src/CefSharp.Core.Runtime/AssemblyInfo.cpp",
+        "src/CefSharp.Core.Runtime/BrowserSettings.h",
+        "src/CefSharp.Core.Runtime/Cef.h",
+        "src/CefSharp.Core.Runtime/CefSettingsBase.h",
+        "src/CefSharp.Core.Runtime/CookieManager.cpp",
+        "src/CefSharp.Core.Runtime/CookieManager.h",
+        "src/CefSharp.Core.Runtime/DragData.h",
+        "src/CefSharp.Core.Runtime/Internals/CefAuthCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefBeforeDownloadCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserHostWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserHostWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefBrowserWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCertificateCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCompletionCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefContextMenuParamsWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefContextMenuParamsWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCookieAccessFilterAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefCookieVisitorAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefDeleteCookiesCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefDevToolsMessageObserverAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefDownloadItemCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefExtensionHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefExtensionWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefExtensionWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefFileDialogCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefFrameWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefFrameWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefGetExtensionResourceCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefImageWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefJSDialogCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefMediaAccessCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefMenuModelWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefNavigationEntryVisitorAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefPdfPrintCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefPermissionPromptCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRefCountManaged.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefRefCountManaged.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRegistrationWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRequestCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRequestContextHandlerAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefRequestContextHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResolveCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceHandlerAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceReadCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceRequestHandlerAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResourceSkipCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResponseFilterAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefResponseWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRunContextMenuCallbackWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefRunFileDialogCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSchemeHandlerFactoryAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSchemeRegistrarWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSetCookieCallbackAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSharpApp.h",
+        "src/CefSharp.Core.Runtime/Internals/CefSslInfoWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefStringVisitorAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefTaskDelegate.h",
+        "src/CefSharp.Core.Runtime/Internals/CefTaskScheduler.h",
+        "src/CefSharp.Core.Runtime/Internals/CefTaskWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefUrlRequestClientAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefUrlRequestClientAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/CefValueWrapper.cpp",
+        "src/CefSharp.Core.Runtime/Internals/CefValueWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/CefWriteHandlerWrapper.h",
+        "src/CefSharp.Core.Runtime/Internals/ClientAdapter.cpp",
+        "src/CefSharp.Core.Runtime/Internals/ClientAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackFactory.cpp",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackFactory.h",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackProxy.cpp",
+        "src/CefSharp.Core.Runtime/Internals/JavascriptCallbackProxy.h",
+        "src/CefSharp.Core.Runtime/Internals/MCefRefPtr.h",
+        "src/CefSharp.Core.Runtime/Internals/Messaging/Messages.h",
+        "src/CefSharp.Core.Runtime/Internals/RenderClientAdapter.h",
+        "src/CefSharp.Core.Runtime/Internals/ReportUnhandledExceptions.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/JsObjectsSerialization.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/JsObjectsSerialization.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/ObjectsSerialization.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/ObjectsSerialization.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/Primitives.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/Primitives.h",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/V8Serialization.cpp",
+        "src/CefSharp.Core.Runtime/Internals/Serialization/V8Serialization.h",
+        "src/CefSharp.Core.Runtime/Internals/StringUtils.h",
+        "src/CefSharp.Core.Runtime/Internals/TypeConversion.h",
+        "src/CefSharp.Core.Runtime/ManagedCefBrowserAdapter.cpp",
+        "src/CefSharp.Core.Runtime/ManagedCefBrowserAdapter.h",
+        "src/CefSharp.Core.Runtime/NativeMethodWrapper.cpp",
+        "src/CefSharp.Core.Runtime/NativeMethodWrapper.h",
+        "src/CefSharp.Core.Runtime/PopupFeatures.h",
+        "src/CefSharp.Core.Runtime/PostData.h",
+        "src/CefSharp.Core.Runtime/PostDataElement.h",
+        "src/CefSharp.Core.Runtime/Request.cpp",
+        "src/CefSharp.Core.Runtime/Request.h",
+        "src/CefSharp.Core.Runtime/RequestContext.cpp",
+        "src/CefSharp.Core.Runtime/RequestContext.h",
+        "src/CefSharp.Core.Runtime/RequestContextSettings.h",
+        "src/CefSharp.Core.Runtime/Stdafx.cpp",
+        "src/CefSharp.Core.Runtime/Stdafx.h",
+        "src/CefSharp.Core.Runtime/UrlRequest.cpp",
+        "src/CefSharp.Core.Runtime/UrlRequest.h",
+        "src/CefSharp.Core.Runtime/WindowInfo.h",
+        "src/CefSharp.Core.Runtime/obj/Win32/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.Core.Runtime/obj/x64/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cpp",
+        "src/CefSharp.Core.Runtime/resource.h",
+        "src/CefSharp.Core.Runtime/vcclr_local.h",
+        "src/CefSharp.Core/BrowserSettings.cs",
+        "src/CefSharp.Core/BrowserSettings.netcore.cs",
+        "src/CefSharp.Core/BrowserSubprocess/SelfHost.cs",
+        "src/CefSharp.Core/Cef.cs",
+        "src/CefSharp.Core/CefSettingsBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.Generated.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.Generated.netcore.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.Partial.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClient.cs",
+        "src/CefSharp.Core/DevTools/DevToolsClientException.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainEntityBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainErrorResponse.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainEventArgsBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsDomainResponseBase.cs",
+        "src/CefSharp.Core/DevTools/DevToolsErrorEventArgs.cs",
+        "src/CefSharp.Core/DevTools/DevToolsEventArgs.cs",
+        "src/CefSharp.Core/DevTools/DevToolsMethodResponse.cs",
+        "src/CefSharp.Core/DevTools/DevToolsMethodResponseContext.cs",
+        "src/CefSharp.Core/DevTools/EventProxy.cs",
+        "src/CefSharp.Core/DevTools/Headers.cs",
+        "src/CefSharp.Core/DevTools/IDevToolsClient.cs",
+        "src/CefSharp.Core/DevTools/IEventProxy.cs",
+        "src/CefSharp.Core/DevTools/MemoryDumpConfig.cs",
+        "src/CefSharp.Core/DevTools/TargetFilter.cs",
+        "src/CefSharp.Core/DevToolsExtensions.cs",
+        "src/CefSharp.Core/DragData.cs",
+        "src/CefSharp.Core/Fluent/DownloadHandler.cs",
+        "src/CefSharp.Core/Fluent/DownloadHandlerBuilder.cs",
+        "src/CefSharp.Core/Fluent/UrlRequestClient.cs",
+        "src/CefSharp.Core/Fluent/UrlRequestClientBuilder.cs",
+        "src/CefSharp.Core/Initializer.cs",
+        "src/CefSharp.Core/ManagedCefBrowserAdapter.cs",
+        "src/CefSharp.Core/ModuleInitializerAttribute.cs",
+        "src/CefSharp.Core/NativeMethodWrapper.cs",
+        "src/CefSharp.Core/ObjectFactory.cs",
+        "src/CefSharp.Core/PostData.cs",
+        "src/CefSharp.Core/PostData.netcore.cs",
+        "src/CefSharp.Core/PostDataElement.cs",
+        "src/CefSharp.Core/PostDataElement.netcore.cs",
+        "src/CefSharp.Core/Properties/AssemblyInfo.cs",
+        "src/CefSharp.Core/Request.cs",
+        "src/CefSharp.Core/Request.netcore.cs",
+        "src/CefSharp.Core/RequestContext.cs",
+        "src/CefSharp.Core/RequestContext.netcore.cs",
+        "src/CefSharp.Core/RequestContextBuilder.cs",
+        "src/CefSharp.Core/RequestContextSettings.cs",
+        "src/CefSharp.Core/UrlRequest.cs",
+        "src/CefSharp.Core/UrlRequest.netcore.cs",
+        "src/CefSharp.Core/WebBrowserExtensionsEx.cs",
+        "src/CefSharp.Core/WindowInfo.cs",
+        "src/CefSharp.Core/WindowInfo.netcore.cs",
+        "src/CefSharp.Core/obj/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs",
+        "src/CefSharp/AsyncExtensions.cs",
+        "src/CefSharp/BindingOptions.cs",
+        "src/CefSharp/Callback/IAuthCallback.cs",
+        "src/CefSharp/Callback/IBeforeDownloadCallback.cs",
+        "src/CefSharp/Callback/ICallback.cs",
+        "src/CefSharp/Callback/ICompletionCallback.cs",
+        "src/CefSharp/Callback/IDeleteCookiesCallback.cs",
+        "src/CefSharp/Callback/IDevToolsMessageObserver.cs",
+        "src/CefSharp/Callback/IDownloadItemCallback.cs",
+        "src/CefSharp/Callback/IFileDialogCallback.cs",
+        "src/CefSharp/Callback/IGetExtensionResourceCallback.cs",
+        "src/CefSharp/Callback/IJavascriptCallback.cs",
+        "src/CefSharp/Callback/IJsDialogCallback.cs",
+        "src/CefSharp/Callback/IMediaAccessCallback.cs",
+        "src/CefSharp/Callback/IPermissionPromptCallback.cs",
+        "src/CefSharp/Callback/IPrintToPdfCallback.cs",
+        "src/CefSharp/Callback/IRequestCallback.cs",
+        "src/CefSharp/Callback/IResolveCallback.cs",
+        "src/CefSharp/Callback/IResourceReadCallback.cs",
+        "src/CefSharp/Callback/IResourceSkipCallback.cs",
+        "src/CefSharp/Callback/IRunContextMenuCallback.cs",
+        "src/CefSharp/Callback/IRunFileDialogCallback.cs",
+        "src/CefSharp/Callback/ISelectClientCertificateCallback.cs",
+        "src/CefSharp/Callback/ISetCookieCallback.cs",
+        "src/CefSharp/Callback/NoOpCompletionCallback.cs",
+        "src/CefSharp/Callback/TaskCompletionCallback.cs",
+        "src/CefSharp/Callback/TaskDeleteCookiesCallback.cs",
+        "src/CefSharp/Callback/TaskPrintToPdfCallback.cs",
+        "src/CefSharp/Callback/TaskResolveCallback.cs",
+        "src/CefSharp/Callback/TaskSetCookieCallback.cs",
+        "src/CefSharp/CefCustomScheme.cs",
+        "src/CefSharp/CefLibraryHandle.cs",
+        "src/CefSharp/CefRuntime.cs",
+        "src/CefSharp/CefSharpSettings.cs",
+        "src/CefSharp/Cookie.cs",
+        "src/CefSharp/DefaultApp.cs",
+        "src/CefSharp/DependencyChecker.cs",
+        "src/CefSharp/DomNode.cs",
+        "src/CefSharp/DownloadItem.cs",
+        "src/CefSharp/Enums/AlphaType.cs",
+        "src/CefSharp/Enums/CefErrorCode.cs",
+        "src/CefSharp/Enums/CefEventFlags.cs",
+        "src/CefSharp/Enums/CefFileDialogMode.cs",
+        "src/CefSharp/Enums/CefFocusSource.cs",
+        "src/CefSharp/Enums/CefJsDialogType.cs",
+        "src/CefSharp/Enums/CefMenuCommand.cs",
+        "src/CefSharp/Enums/CefPdfPrintMarginType.cs",
+        "src/CefSharp/Enums/CefReturnValue.cs",
+        "src/CefSharp/Enums/CefState.cs",
+        "src/CefSharp/Enums/CefTerminationStatus.cs",
+        "src/CefSharp/Enums/CefThreadIds.cs",
+        "src/CefSharp/Enums/CertStatus.cs",
+        "src/CefSharp/Enums/ChannelLayout.cs",
+        "src/CefSharp/Enums/ColorType.cs",
+        "src/CefSharp/Enums/CompositionUnderlineStyle.cs",
+        "src/CefSharp/Enums/ContextMenuEditState.cs",
+        "src/CefSharp/Enums/ContextMenuMediaState.cs",
+        "src/CefSharp/Enums/ContextMenuMediaType.cs",
+        "src/CefSharp/Enums/ContextMenuType.cs",
+        "src/CefSharp/Enums/CookiePriority.cs",
+        "src/CefSharp/Enums/CookieSameSite.cs",
+        "src/CefSharp/Enums/CursorType.cs",
+        "src/CefSharp/Enums/DragOperationsMask.cs",
+        "src/CefSharp/Enums/FilterStatus.cs",
+        "src/CefSharp/Enums/KeyEventType.cs",
+        "src/CefSharp/Enums/KeyType.cs",
+        "src/CefSharp/Enums/LogSeverity.cs",
+        "src/CefSharp/Enums/MediaAccessPermissionType.cs",
+        "src/CefSharp/Enums/MenuItemType.cs",
+        "src/CefSharp/Enums/MouseButtonType.cs",
+        "src/CefSharp/Enums/PaintElementType.cs",
+        "src/CefSharp/Enums/PermissionRequestResult.cs",
+        "src/CefSharp/Enums/PermissionRequestType.cs",
+        "src/CefSharp/Enums/PointerType.cs",
+        "src/CefSharp/Enums/PostDataElementType.cs",
+        "src/CefSharp/Enums/ReferrerPolicy.cs",
+        "src/CefSharp/Enums/ResourceType.cs",
+        "src/CefSharp/Enums/SchemeOptions.cs",
+        "src/CefSharp/Enums/SslContentStatus.cs",
+        "src/CefSharp/Enums/SslVersion.cs",
+        "src/CefSharp/Enums/TextInputMode.cs",
+        "src/CefSharp/Enums/TouchEventType.cs",
+        "src/CefSharp/Enums/TransitionType.cs",
+        "src/CefSharp/Enums/UrlRequestFlags.cs",
+        "src/CefSharp/Enums/UrlRequestStatus.cs",
+        "src/CefSharp/Enums/ValueType.cs",
+        "src/CefSharp/Enums/WindowOpenDisposition.cs",
+        "src/CefSharp/Event/AddressChangedEventArgs.cs",
+        "src/CefSharp/Event/ConsoleMessageEventArgs.cs",
+        "src/CefSharp/Event/FrameLoadEndEventArgs.cs",
+        "src/CefSharp/Event/FrameLoadStartEventArgs.cs",
+        "src/CefSharp/Event/JavascriptBindingCompleteEventArgs.cs",
+        "src/CefSharp/Event/JavascriptBindingEventArgs.cs",
+        "src/CefSharp/Event/JavascriptBindingMultipleCompleteEventArgs.cs",
+        "src/CefSharp/Event/JavascriptMessageReceivedEventArgs.cs",
+        "src/CefSharp/Event/LoadErrorEventArgs.cs",
+        "src/CefSharp/Event/LoadingStateChangedEventArgs.cs",
+        "src/CefSharp/Event/StatusMessageEventHandler.cs",
+        "src/CefSharp/Event/TitleChangedEventArgs.cs",
+        "src/CefSharp/Handler/AccessibilityHandler.cs",
+        "src/CefSharp/Handler/AudioHandler.cs",
+        "src/CefSharp/Handler/BrowserProcessHandler.cs",
+        "src/CefSharp/Handler/ContextMenuHandler.cs",
+        "src/CefSharp/Handler/CookieAccessFilter.cs",
+        "src/CefSharp/Handler/DialogHandler.cs",
+        "src/CefSharp/Handler/DisplayHandler.cs",
+        "src/CefSharp/Handler/DownloadHandler.cs",
+        "src/CefSharp/Handler/DragHandler .cs",
+        "src/CefSharp/Handler/ExtensionHandler .cs",
+        "src/CefSharp/Handler/FindHandler.cs",
+        "src/CefSharp/Handler/FocusHandler.cs",
+        "src/CefSharp/Handler/FrameHandler.cs",
+        "src/CefSharp/Handler/IAccessibilityHandler.cs",
+        "src/CefSharp/Handler/IAudioHandler.cs",
+        "src/CefSharp/Handler/IBrowserProcessHandler.cs",
+        "src/CefSharp/Handler/IContextMenuHandler.cs",
+        "src/CefSharp/Handler/ICookieAccessFilter.cs",
+        "src/CefSharp/Handler/IDialogHandler.cs",
+        "src/CefSharp/Handler/IDisplayHandler.cs",
+        "src/CefSharp/Handler/IDownloadHandler.cs",
+        "src/CefSharp/Handler/IDragHandler.cs",
+        "src/CefSharp/Handler/IExtensionHandler.cs",
+        "src/CefSharp/Handler/IFindHandler.cs",
+        "src/CefSharp/Handler/IFocusHandler.cs",
+        "src/CefSharp/Handler/IFrameHandler.cs",
+        "src/CefSharp/Handler/IJsDialogHandler.cs",
+        "src/CefSharp/Handler/IKeyboardHandler.cs",
+        "src/CefSharp/Handler/ILifeSpanHandler.cs",
+        "src/CefSharp/Handler/ILoadHandler.cs",
+        "src/CefSharp/Handler/IPermissionHandler.cs",
+        "src/CefSharp/Handler/IRenderProcessMessageHandler.cs",
+        "src/CefSharp/Handler/IRequestContextHandler.cs",
+        "src/CefSharp/Handler/IRequestHandler.cs",
+        "src/CefSharp/Handler/IResourceHandler.cs",
+        "src/CefSharp/Handler/IResourceRequestHandler.cs",
+        "src/CefSharp/Handler/JsDialogHandler.cs",
+        "src/CefSharp/Handler/KeyboardHandler.cs",
+        "src/CefSharp/Handler/LifeSpanHandler.cs",
+        "src/CefSharp/Handler/LoadHandler.cs",
+        "src/CefSharp/Handler/PermissionHandler.cs",
+        "src/CefSharp/Handler/RequestContextHandler.cs",
+        "src/CefSharp/Handler/RequestHandler.cs",
+        "src/CefSharp/Handler/ResourceRequestHandler.cs",
+        "src/CefSharp/IApp.cs",
+        "src/CefSharp/IBrowser.cs",
+        "src/CefSharp/IBrowserHost.cs",
+        "src/CefSharp/IBrowserSettings.cs",
+        "src/CefSharp/IChromiumWebBrowserBase.cs",
+        "src/CefSharp/IContextMenuParams.cs",
+        "src/CefSharp/ICookieManager.cs",
+        "src/CefSharp/IDomNode.cs",
+        "src/CefSharp/IDragData.cs",
+        "src/CefSharp/IExtension.cs",
+        "src/CefSharp/IFrame.cs",
+        "src/CefSharp/IImage.cs",
+        "src/CefSharp/IJavascriptObjectRepository.cs",
+        "src/CefSharp/IMenuModel.cs",
+        "src/CefSharp/IPopupFeatures.cs",
+        "src/CefSharp/IPostData.cs",
+        "src/CefSharp/IPostDataElement.cs",
+        "src/CefSharp/IRegistration.cs",
+        "src/CefSharp/IRequest.cs",
+        "src/CefSharp/IRequestContext.cs",
+        "src/CefSharp/IResourceRequestHandlerFactory.cs",
+        "src/CefSharp/IResponse.cs",
+        "src/CefSharp/IResponseFilter.cs",
+        "src/CefSharp/ISchemeRegistrar.cs",
+        "src/CefSharp/ISslInfo.cs",
+        "src/CefSharp/IUrlRequest.cs",
+        "src/CefSharp/IUrlRequestClient.cs",
+        "src/CefSharp/IValue.cs",
+        "src/CefSharp/IWebBrowser.cs",
+        "src/CefSharp/IWindowInfo.cs",
+        "src/CefSharp/Internals/BaseTimeConverter.cs",
+        "src/CefSharp/Internals/BrowserRefCounter.cs",
+        "src/CefSharp/Internals/ByteArrayResourceHandler.cs",
+        "src/CefSharp/Internals/CefSharpArguments.cs",
+        "src/CefSharp/Internals/CefThread.cs",
+        "src/CefSharp/Internals/CefTimeUtils.cs",
+        "src/CefSharp/Internals/CommandLineArgDictionary.cs",
+        "src/CefSharp/Internals/CommandLineArgsParser.cs",
+        "src/CefSharp/Internals/ConcurrentMethodRunnerQueue.cs",
+        "src/CefSharp/Internals/CookieManagerDecorator.cs",
+        "src/CefSharp/Internals/FileResourceHandler.cs",
+        "src/CefSharp/Internals/FreezableBase.cs",
+        "src/CefSharp/Internals/GlobalContextInitialized.cs",
+        "src/CefSharp/Internals/HeaderNameValueCollection.cs",
+        "src/CefSharp/Internals/IBaseTimeConverter.cs",
+        "src/CefSharp/Internals/IBrowserAdapter.cs",
+        "src/CefSharp/Internals/IBrowserRefCounter.cs",
+        "src/CefSharp/Internals/IJavascriptCallbackFactory.cs",
+        "src/CefSharp/Internals/IJavascriptObjectRepositoryInternal.cs",
+        "src/CefSharp/Internals/IMethodRunnerQueue.cs",
+        "src/CefSharp/Internals/IRenderWebBrowser.cs",
+        "src/CefSharp/Internals/ITaskScheduler.cs",
+        "src/CefSharp/Internals/IWebBrowserInternal.cs",
+        "src/CefSharp/Internals/InMemoryResourceRequestHandler.cs",
+        "src/CefSharp/Internals/InitializeAsyncBrowserProcessHandler.cs",
+        "src/CefSharp/Internals/IntPtrExtensions.cs",
+        "src/CefSharp/Internals/JavascriptCallback.cs",
+        "src/CefSharp/Internals/JavascriptMethod.cs",
+        "src/CefSharp/Internals/JavascriptObject.cs",
+        "src/CefSharp/Internals/JavascriptObjectRepository.cs",
+        "src/CefSharp/Internals/JavascriptProperty.cs",
+        "src/CefSharp/Internals/Json/JsonEnumConverter.cs",
+        "src/CefSharp/Internals/Json/JsonEnumConverterFactory.cs",
+        "src/CefSharp/Internals/MethodInvocation.cs",
+        "src/CefSharp/Internals/MethodInvocationCompleteArgs.cs",
+        "src/CefSharp/Internals/MethodInvocationResult.cs",
+        "src/CefSharp/Internals/MethodParameter.cs",
+        "src/CefSharp/Internals/MethodRunnerQueue.cs",
+        "src/CefSharp/Internals/MimeTypeMapping.cs",
+        "src/CefSharp/Internals/NoFocusHandler.cs",
+        "src/CefSharp/Internals/NoOpBrowserRefCounter.cs",
+        "src/CefSharp/Internals/ParentProcessMonitor.cs",
+        "src/CefSharp/Internals/Partial/ChromiumWebBrowser.Partial.cs",
+        "src/CefSharp/Internals/PathCheck.cs",
+        "src/CefSharp/Internals/PendingTaskRepository.cs",
+        "src/CefSharp/Internals/ReflectionUtils.cs",
+        "src/CefSharp/Internals/RenderprocessClientFactory.cs",
+        "src/CefSharp/Internals/StringCheck.cs",
+        "src/CefSharp/Internals/TaskExtensions.cs",
+        "src/CefSharp/Internals/TaskTimeoutExtensions.cs",
+        "src/CefSharp/Internals/Tasks/LimitedConcurrencyLevelTaskScheduler.cs",
+        "src/CefSharp/Internals/Tasks/SyncContextTaskCompletionSource.cs",
+        "src/CefSharp/Internals/TryCallMethodResult.cs",
+        "src/CefSharp/Internals/Wcf/BrowserProcessResponse.cs",
+        "src/CefSharp/Internals/Wcf/BrowserProcessService.cs",
+        "src/CefSharp/Internals/Wcf/BrowserProcessServiceHost.cs",
+        "src/CefSharp/Internals/Wcf/IBrowserProcess.cs",
+        "src/CefSharp/Internals/Wcf/JavascriptCallbackEndpointBehavior.cs",
+        "src/CefSharp/Internals/Wcf/JavascriptCallbackSurrogate.cs",
+        "src/CefSharp/Internals/Wcf/WcfExtensions.cs",
+        "src/CefSharp/JavascriptBinding/CamelCaseJavascriptNameConverter.cs",
+        "src/CefSharp/JavascriptBinding/IJavascriptNameConverter.cs",
+        "src/CefSharp/JavascriptBinding/JavascriptBindingExtensions.cs",
+        "src/CefSharp/JavascriptBinding/JavascriptBindingSettings.cs",
+        "src/CefSharp/JavascriptBinding/LegacyCamelCaseJavascriptNameConverter.cs",
+        "src/CefSharp/JavascriptException.cs",
+        "src/CefSharp/JavascriptIgnoreAttribute.cs",
+        "src/CefSharp/JavascriptResponse.cs",
+        "src/CefSharp/JavascriptStackFrame.cs",
+        "src/CefSharp/Lagacy/ResourceHandler.cs",
+        "src/CefSharp/LoadUrlAsyncResponse.cs",
+        "src/CefSharp/ModelBinding/BindingMemberInfo.cs",
+        "src/CefSharp/ModelBinding/DefaultBinder.cs",
+        "src/CefSharp/ModelBinding/IAsyncMethodInterceptor.cs",
+        "src/CefSharp/ModelBinding/IBinder.cs",
+        "src/CefSharp/ModelBinding/IMethodInterceptor.cs",
+        "src/CefSharp/ModelBinding/IPropertyInterceptor.cs",
+        "src/CefSharp/ModelBinding/ModelBindingExtensions.cs",
+        "src/CefSharp/NavigationEntry.cs",
+        "src/CefSharp/PdfPrintSettings.cs",
+        "src/CefSharp/PostDataExtensions.cs",
+        "src/CefSharp/Preferences/SetPreferenceResponse.cs",
+        "src/CefSharp/Preferences/SetProxyResponse.cs",
+        "src/CefSharp/Properties/AssemblyInfo.cs",
+        "src/CefSharp/ProxyOptions.cs",
+        "src/CefSharp/RenderProcess/IRenderProcessHandler.cs",
+        "src/CefSharp/RenderProcess/IV8Context.cs",
+        "src/CefSharp/RenderProcess/V8Exception.cs",
+        "src/CefSharp/RequestContextExtensions.cs",
+        "src/CefSharp/ResourceHandler.cs",
+        "src/CefSharp/ResourceRequestHandlerFactory.cs",
+        "src/CefSharp/ResourceRequestHandlerFactoryItem.cs",
+        "src/CefSharp/ResponseFilter/StreamResponseFilter.cs",
+        "src/CefSharp/SchemeHandler/FolderSchemeHandlerFactory.cs",
+        "src/CefSharp/SchemeHandler/ISchemeHandlerFactory.cs",
+        "src/CefSharp/SchemeHandler/OwinResourceHandler.cs",
+        "src/CefSharp/SchemeHandler/OwinSchemeHandlerFactory.cs",
+        "src/CefSharp/SslStatus.cs",
+        "src/CefSharp/Structs/AudioParamaters.cs",
+        "src/CefSharp/Structs/CompositionUnderline.cs",
+        "src/CefSharp/Structs/CursorInfo.cs",
+        "src/CefSharp/Structs/DomRect.cs",
+        "src/CefSharp/Structs/DraggableRegion.cs",
+        "src/CefSharp/Structs/KeyEvent.cs",
+        "src/CefSharp/Structs/MouseEvent.cs",
+        "src/CefSharp/Structs/Point.cs",
+        "src/CefSharp/Structs/Range.cs",
+        "src/CefSharp/Structs/Rect.cs",
+        "src/CefSharp/Structs/ResolveCallbackResult.cs",
+        "src/CefSharp/Structs/ScreenInfo.cs",
+        "src/CefSharp/Structs/Size.cs",
+        "src/CefSharp/Structs/TouchEvent.cs",
+        "src/CefSharp/UrlParts.cs",
+        "src/CefSharp/UrlRequestClient.cs",
+        "src/CefSharp/Visitor/ICookieVisitor.cs",
+        "src/CefSharp/Visitor/INavigationEntryVisitor.cs",
+        "src/CefSharp/Visitor/IStringVisitor.cs",
+        "src/CefSharp/Visitor/TaskCookieVisitor.cs",
+        "src/CefSharp/Visitor/TaskNavigationEntryVisitor.cs",
+        "src/CefSharp/Visitor/TaskStringVisitor.cs",
+        "src/CefSharp/WaitForNavigationAsyncResponse.cs",
+        "src/CefSharp/WaitForSelectorAsyncResponse.cs",
+        "src/CefSharp/Web/HtmlString.cs",
+        "src/CefSharp/Web/JsonString.cs",
+        "src/CefSharp/WebBrowserExtensions.cs",
+        "src/CefSharp/obj/Release/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs"
+      ]
+    },
+    "CefSharp.WinForms/119.1.20": {
+      "sha512": "rL9trKYArmhKlqOokK/O7ecA9MvUJxJnUWwdFPUBOG9+tm2EtdzXG9Z8E01T9VQewlY6tn6/Lex0/I5I3l6I9Q==",
+      "type": "package",
+      "path": "cefsharp.winforms/119.1.20",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Readme.txt",
+        "cefsharp.winforms.119.1.20.nupkg.sha512",
+        "cefsharp.winforms.nuspec",
+        "lib/net462/CefSharp.WinForms.XML",
+        "lib/net462/CefSharp.WinForms.dll",
+        "lib/net462/CefSharp.WinForms.pdb",
+        "src/CefSharp.WinForms/CefSettings.cs",
+        "src/CefSharp.WinForms/ChromiumWebBrowser.cs",
+        "src/CefSharp.WinForms/ChromiumWebBrowserDesigner.cs",
+        "src/CefSharp.WinForms/Experimental/ChromiumRenderWidgetHandleFinder.cs",
+        "src/CefSharp.WinForms/Experimental/ChromiumWidgetNativeWindow.cs",
+        "src/CefSharp.WinForms/Handler/DisplayHandler.cs",
+        "src/CefSharp.WinForms/Handler/LifeSpanHandler.cs",
+        "src/CefSharp.WinForms/Handler/LifeSpanHandlerBuilder.cs",
+        "src/CefSharp.WinForms/Handler/LoadHandler.cs",
+        "src/CefSharp.WinForms/Handler/PopupCreation.cs",
+        "src/CefSharp.WinForms/Host/ChromiumHostControl.cs",
+        "src/CefSharp.WinForms/Host/ChromiumHostControlBase.cs",
+        "src/CefSharp.WinForms/IWinFormsChromiumWebBrowser.cs",
+        "src/CefSharp.WinForms/IWinFormsWebBrowser.cs",
+        "src/CefSharp.WinForms/Internals/ControlExtensions.cs",
+        "src/CefSharp.WinForms/Internals/DefaultFocusHandler.cs",
+        "src/CefSharp.WinForms/Internals/NativeMethods.cs",
+        "src/CefSharp.WinForms/Internals/ParentFormMessageInterceptor.cs",
+        "src/CefSharp.WinForms/Properties/AssemblyInfo.cs",
+        "src/CefSharp.WinForms/WebBrowserExtensions.cs",
+        "src/CefSharp.WinForms/obj/Release/net462/.NETFramework,Version=v4.6.2.AssemblyAttributes.cs"
       ]
     },
     "ExcelDataReader/3.6.0": {
@@ -7408,6 +6607,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
+      "CefSharp.Common >= 119.1.20",
+      "CefSharp.WinForms >= 119.1.20",
       "CustomControls >= 1.0.0",
       "DAL >= 1.0.0",
       "ExcelDataReader >= 3.6.0",
@@ -7422,11 +6623,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\WindowsAppQuanLy\\GUI.csproj",
+      "projectUniqueName": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\WindowsAppQuanLy\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\WindowsAppQuanLy\\GUI.csproj",
+      "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\WindowsAppQuanLy\\GUI.csproj",
       "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\WindowsAppQuanLy\\obj\\",
+      "outputPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\WindowsAppQuanLy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7444,11 +6645,11 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\DAL.csproj": {
-              "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\DAL.csproj"
+            "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\DAL.csproj": {
+              "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\DAL.csproj"
             },
-            "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj": {
-              "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj"
+            "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj": {
+              "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj"
             }
           }
         }
@@ -7463,6 +6664,14 @@
       "net48": {
         "targetAlias": "net48",
         "dependencies": {
+          "CefSharp.Common": {
+            "target": "Package",
+            "version": "[119.1.20, )"
+          },
+          "CefSharp.WinForms": {
+            "target": "Package",
+            "version": "[119.1.20, )"
+          },
           "ExcelDataReader": {
             "target": "Package",
             "version": "[3.6.0, )"
@@ -7481,11 +6690,6 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win7-x86": {
-        "#import": []
       }
     }
   }

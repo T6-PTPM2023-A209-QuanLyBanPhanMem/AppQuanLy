@@ -25,8 +25,14 @@ namespace WindowsAppQuanLy.GUI
             this.btnSanPham.Click += BtnSanPham_Click;
             this.btnHoaDon.Click += BtnHoaDon_Click;
             this.btnThongKe.Click += BtnHeThong_Click;
+            this.btnWeb.Click += BtnWeb_Click;
 
             this.Load += FormMain_Load;
+        }
+
+        private void BtnWeb_Click(object sender, EventArgs e)
+        {
+            Program.DisplayChildForm(Program.formWeb);
         }
 
         private void BtnHeThong_Click(object sender, EventArgs e)

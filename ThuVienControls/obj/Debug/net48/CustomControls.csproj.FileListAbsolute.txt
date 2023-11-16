@@ -16,22 +16,3 @@ D:\GitHub\WindowsApp_QuanLy\ThuVienControls\obj\Debug\net48\CustomControls.cspro
 D:\GitHub\WindowsApp_QuanLy\ThuVienControls\obj\Debug\net48\CustomControls.csproj.CopyComplete
 D:\GitHub\WindowsApp_QuanLy\ThuVienControls\obj\Debug\net48\CustomControls.dll
 D:\GitHub\WindowsApp_QuanLy\ThuVienControls\obj\Debug\net48\CustomControls.pdb
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\bin\Debug\net48\CustomControls.dll
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\bin\Debug\net48\CustomControls.pdb
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\bin\Debug\net48\Firebase.Storage.dll
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\bin\Debug\net48\Krypton.Toolkit.dll
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\bin\Debug\net48\Newtonsoft.Json.dll
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\bin\Debug\net48\System.Diagnostics.DiagnosticSource.dll
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.csproj.AssemblyReference.cache
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.FormChung.resources
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.FormCon.resources
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.LoadingScreen.resources
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.csproj.GenerateResource.cache
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.GeneratedMSBuildEditorConfig.editorconfig
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.AssemblyInfoInputs.cache
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.AssemblyInfo.cs
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.csproj.CoreCompileInputs.cache
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.csproj.CopyComplete
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.dll
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.pdb
-E:\Projects\Visual Studio\AppQuanLyCuaHangPhanMem\WindowsAppQuanLy\ThuVienControls\obj\Debug\net48\CustomControls.sourcelink.json
