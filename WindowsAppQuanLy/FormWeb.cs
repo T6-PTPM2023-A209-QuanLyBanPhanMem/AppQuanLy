@@ -20,9 +20,15 @@ namespace GUI
         {
             InitializeComponent();
 
-            chromiumWebBrowser1.LoadUrl("https://qlbanphanmem.azurewebsites.net/");
+            txtURL.Text = "https://qlbanphanmem.azurewebsites.net/";
+            btnBack.Click += btnBack_Click;
+            btnForward.Click += BtnForward_Click; ;
 
             DocBanner();
+
+            this.Load += FormWeb_Load;
+            this.Resize += FormWeb_Resize;
+            this.chromiumWebBrowser1.AddressChanged += ChromiumWebBrowser1_AddressChanged;
 
             this.cbxPhanMem.DataSource = new DAL_PhanMem().Doc();
             this.cbxPhanMem.DisplayMember = "TENPM";
@@ -34,6 +40,31 @@ namespace GUI
             this.btnCapNhat.Click += BtnCapNhat_Click;
             this.btnXoa.Click += BtnXoa_Click;
             this.dgvBanner.SelectionChanged += DgvBanner_SelectionChanged;
+        }
+
+        private void FormWeb_Resize(object sender, EventArgs e)
+        {
+            txtURL.Width = kryptonToolStrip1.Width - 110;
+        }
+
+        private async void FormWeb_Load(object sender, EventArgs e)
+        {
+            await chromiumWebBrowser1.LoadUrlAsync("https://qlbanphanmem.azurewebsites.net/");
+        }
+
+        private void ChromiumWebBrowser1_AddressChanged(object sender, CefSharp.AddressChangedEventArgs e)
+        {
+            txtURL.Text = chromiumWebBrowser1.Address;
+        }
+
+        private void BtnForward_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.GetBrowser().GoForward();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            chromiumWebBrowser1.GetBrowser().GoBack();
         }
 
         private void BtnXoa_Click(object sender, EventArgs e)

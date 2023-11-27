@@ -38,9 +38,9 @@
             this.KEY_MaKey = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KEY_TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtSoSanPham = new ThuVienControls.RoundTextBox();
-            this.txtGiaTriTonKhoa = new ThuVienControls.RoundTextBox();
-            this.txtTongDoanhThu = new ThuVienControls.RoundTextBox();
+            this.txtSoKey = new ThuVienControls.RoundTextBox();
+            this.txtSoTaiKhoan = new ThuVienControls.RoundTextBox();
+            this.txtSoChiTiet = new ThuVienControls.RoundTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -182,9 +182,9 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Controls.Add(this.txtSoSanPham, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txtGiaTriTonKhoa, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txtTongDoanhThu, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txtSoKey, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.txtSoTaiKhoan, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtSoChiTiet, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.label3, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.label4, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.label5, 1, 3);
@@ -200,44 +200,44 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(594, 254);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
-            // txtSoSanPham
+            // txtSoKey
             // 
-            this.txtSoSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSoSanPham.Location = new System.Drawing.Point(178, 71);
-            this.txtSoSanPham.Name = "txtSoSanPham";
-            this.txtSoSanPham.ReadOnly = true;
-            this.txtSoSanPham.Size = new System.Drawing.Size(366, 39);
-            this.txtSoSanPham.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSoKey.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSoKey.Location = new System.Drawing.Point(178, 71);
+            this.txtSoKey.Name = "txtSoKey";
+            this.txtSoKey.ReadOnly = true;
+            this.txtSoKey.Size = new System.Drawing.Size(366, 39);
+            this.txtSoKey.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSoSanPham.StateCommon.Border.Rounding = 25F;
-            this.txtSoSanPham.TabIndex = 0;
+            this.txtSoKey.StateCommon.Border.Rounding = 25F;
+            this.txtSoKey.TabIndex = 0;
             // 
-            // txtGiaTriTonKhoa
+            // txtSoTaiKhoan
             // 
-            this.txtGiaTriTonKhoa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtGiaTriTonKhoa.Location = new System.Drawing.Point(178, 110);
-            this.txtGiaTriTonKhoa.Name = "txtGiaTriTonKhoa";
-            this.txtGiaTriTonKhoa.ReadOnly = true;
-            this.txtGiaTriTonKhoa.Size = new System.Drawing.Size(366, 39);
-            this.txtGiaTriTonKhoa.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSoTaiKhoan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSoTaiKhoan.Location = new System.Drawing.Point(178, 110);
+            this.txtSoTaiKhoan.Name = "txtSoTaiKhoan";
+            this.txtSoTaiKhoan.ReadOnly = true;
+            this.txtSoTaiKhoan.Size = new System.Drawing.Size(366, 39);
+            this.txtSoTaiKhoan.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtGiaTriTonKhoa.StateCommon.Border.Rounding = 25F;
-            this.txtGiaTriTonKhoa.TabIndex = 1;
+            this.txtSoTaiKhoan.StateCommon.Border.Rounding = 25F;
+            this.txtSoTaiKhoan.TabIndex = 1;
             // 
-            // txtTongDoanhThu
+            // txtSoChiTiet
             // 
-            this.txtTongDoanhThu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTongDoanhThu.Location = new System.Drawing.Point(178, 149);
-            this.txtTongDoanhThu.Name = "txtTongDoanhThu";
-            this.txtTongDoanhThu.ReadOnly = true;
-            this.txtTongDoanhThu.Size = new System.Drawing.Size(366, 39);
-            this.txtTongDoanhThu.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSoChiTiet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSoChiTiet.Location = new System.Drawing.Point(178, 149);
+            this.txtSoChiTiet.Name = "txtSoChiTiet";
+            this.txtSoChiTiet.ReadOnly = true;
+            this.txtSoChiTiet.Size = new System.Drawing.Size(366, 39);
+            this.txtSoChiTiet.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtTongDoanhThu.StateCommon.Border.Rounding = 25F;
-            this.txtTongDoanhThu.TabIndex = 2;
+            this.txtSoChiTiet.StateCommon.Border.Rounding = 25F;
+            this.txtSoChiTiet.TabIndex = 2;
             // 
             // label3
             // 
@@ -442,9 +442,9 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private ThuVienControls.GeneralDataGridView dgvCTPM;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private ThuVienControls.RoundTextBox txtSoSanPham;
-        private ThuVienControls.RoundTextBox txtGiaTriTonKhoa;
-        private ThuVienControls.RoundTextBox txtTongDoanhThu;
+        private ThuVienControls.RoundTextBox txtSoKey;
+        private ThuVienControls.RoundTextBox txtSoTaiKhoan;
+        private ThuVienControls.RoundTextBox txtSoChiTiet;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

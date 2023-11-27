@@ -5634,11 +5634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\DAL.csproj",
+      "projectUniqueName": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\DAL.csproj",
+      "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\DAL\\obj\\",
+      "outputPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",

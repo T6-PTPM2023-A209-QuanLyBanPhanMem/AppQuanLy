@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj": {}
+    "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj": {
+    "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj",
+        "projectUniqueName": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj",
         "projectName": "CustomControls",
-        "projectPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\CustomControls.csproj",
+        "projectPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\CustomControls.csproj",
         "packagesPath": "C:\\Users\\Nam\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\Visual Studio\\AppQuanLyCuaHangPhanMem\\WindowsAppQuanLy\\ThuVienControls\\obj\\",
+        "outputPath": "E:\\Projects\\Visual Studio\\WindowsAppQuanLy\\T6-PTPM2023-A209-QuanLyBanPhanMem\\AppQuanLy\\ThuVienControls\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",

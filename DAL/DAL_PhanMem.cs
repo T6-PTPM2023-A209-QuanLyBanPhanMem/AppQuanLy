@@ -62,6 +62,21 @@ namespace DAL
             return dsPhanMem.Count > 0 ? dsPhanMem.Sum(e => e.DONGIA * e.SOLUONG) : 0;
         }
 
+        public static int DemSoLuongDaBan(int maPM)
+        {
+            return DAL_SQL.GetDataContext().PHANMEMs.FirstOrDefault(x => x.MAPM == maPM).CTHDs.Count;
+        }
+
+        public static int DemSoLuongTonKho(int maPM)
+        {
+            return DAL_SQL.GetDataContext().PHANMEMs.Where(x => x.MAPM == maPM).Sum(x => x.SOLUONG);
+        }
+
+        public static int TinhDoanhThu(int maPM)
+        {
+            return DAL_SQL.GetDataContext().PHANMEMs.FirstOrDefault(x => x.MAPM == maPM).CTHDs.Sum(x => x.THANHTIEN);
+        }
+
         public async Task<bool> ThemAsync(PHANMEM pm)
         {
             try

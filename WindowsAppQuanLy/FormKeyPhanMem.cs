@@ -99,7 +99,12 @@ namespace GUI
         {
             if (dgvPhanMem.CurrentRow != null)
             {
-                DocChiTietPhanMem(Convert.ToInt32(dgvPhanMem.CurrentRow.Cells["TK_MAPM"].Value));
+                int maPM = Convert.ToInt32(dgvPhanMem.CurrentRow.Cells["TK_MAPM"].Value);
+                DocChiTietPhanMem(maPM);
+
+                txtSoKey.Text = DAL_ChiTietPhanMem.DemKey(maPM).ToString();
+                txtSoTaiKhoan.Text = DAL_ChiTietPhanMem.DemTaiKhoan(maPM).ToString();
+                txtSoChiTiet.Text = DAL_ChiTietPhanMem.Dem(maPM).ToString();
             }
         }
 

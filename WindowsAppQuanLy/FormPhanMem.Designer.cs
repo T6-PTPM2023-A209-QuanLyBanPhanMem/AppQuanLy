@@ -50,8 +50,8 @@ namespace WindowsAppQuanLy.GUI
             this.PM_MaHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PM_ThoiGianLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.txtSoSanPham = new ThuVienControls.RoundTextBox();
-            this.txtGiaTriTonKhoa = new ThuVienControls.RoundTextBox();
+            this.txtSoLuotMua = new ThuVienControls.RoundTextBox();
+            this.txtSoLuongTonKho = new ThuVienControls.RoundTextBox();
             this.txtTongDoanhThu = new ThuVienControls.RoundTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -293,8 +293,8 @@ namespace WindowsAppQuanLy.GUI
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 103F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel2.Controls.Add(this.txtSoSanPham, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txtGiaTriTonKhoa, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.txtSoLuotMua, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.txtSoLuongTonKho, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.txtTongDoanhThu, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.label3, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.label4, 1, 3);
@@ -313,29 +313,29 @@ namespace WindowsAppQuanLy.GUI
             this.tableLayoutPanel2.Size = new System.Drawing.Size(384, 427);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
-            // txtSoSanPham
+            // txtSoLuotMua
             // 
-            this.txtSoSanPham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSoSanPham.Location = new System.Drawing.Point(134, 149);
-            this.txtSoSanPham.Name = "txtSoSanPham";
-            this.txtSoSanPham.Size = new System.Drawing.Size(218, 39);
-            this.txtSoSanPham.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSoLuotMua.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSoLuotMua.Location = new System.Drawing.Point(134, 149);
+            this.txtSoLuotMua.Name = "txtSoLuotMua";
+            this.txtSoLuotMua.Size = new System.Drawing.Size(218, 39);
+            this.txtSoLuotMua.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtSoSanPham.StateCommon.Border.Rounding = 25F;
-            this.txtSoSanPham.TabIndex = 0;
+            this.txtSoLuotMua.StateCommon.Border.Rounding = 25F;
+            this.txtSoLuotMua.TabIndex = 0;
             // 
-            // txtGiaTriTonKhoa
+            // txtSoLuongTonKho
             // 
-            this.txtGiaTriTonKhoa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtGiaTriTonKhoa.Location = new System.Drawing.Point(134, 188);
-            this.txtGiaTriTonKhoa.Name = "txtGiaTriTonKhoa";
-            this.txtGiaTriTonKhoa.Size = new System.Drawing.Size(218, 39);
-            this.txtGiaTriTonKhoa.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.txtSoLuongTonKho.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSoLuongTonKho.Location = new System.Drawing.Point(134, 188);
+            this.txtSoLuongTonKho.Name = "txtSoLuongTonKho";
+            this.txtSoLuongTonKho.Size = new System.Drawing.Size(218, 39);
+            this.txtSoLuongTonKho.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 
             | Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txtGiaTriTonKhoa.StateCommon.Border.Rounding = 25F;
-            this.txtGiaTriTonKhoa.TabIndex = 1;
+            this.txtSoLuongTonKho.StateCommon.Border.Rounding = 25F;
+            this.txtSoLuongTonKho.TabIndex = 1;
             // 
             // txtTongDoanhThu
             // 
@@ -865,8 +865,8 @@ namespace WindowsAppQuanLy.GUI
         private GroupBox groupBox2;
         private ThuVienControls.GeneralDataGridView dgvHoaDon;
         private TableLayoutPanel tableLayoutPanel2;
-        private ThuVienControls.RoundTextBox txtSoSanPham;
-        private ThuVienControls.RoundTextBox txtGiaTriTonKhoa;
+        private ThuVienControls.RoundTextBox txtSoLuotMua;
+        private ThuVienControls.RoundTextBox txtSoLuongTonKho;
         private ThuVienControls.RoundTextBox txtTongDoanhThu;
         private Label label3;
         private Label label4;

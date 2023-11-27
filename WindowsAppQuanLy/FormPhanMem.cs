@@ -212,7 +212,8 @@ namespace WindowsAppQuanLy.GUI
         {
             if (dgvPhanMem.CurrentRow != null)
             {
-                DocHoaDon(Convert.ToInt32(dgvPhanMem.CurrentRow.Cells["MaPM"].Value.ToString()));
+                int maPM = Convert.ToInt32(dgvPhanMem.CurrentRow.Cells["MaPM"].Value.ToString());
+                DocHoaDon(maPM);
 
                 ThemHinh();
 
@@ -224,6 +225,10 @@ namespace WindowsAppQuanLy.GUI
                 this.cbxNPH.SelectedValue = Convert.ToInt32(dgvPhanMem.CurrentRow.Cells["MaNPH"].Value.ToString());
                 this.txtThoiHan.Text = dgvPhanMem.CurrentRow.Cells["ThoiHan"].Value.ToString();
                 this.cbxDonViThoiHan.SelectedValue = dgvPhanMem.CurrentRow.Cells["DonViThoiHan"].Value.ToString();
+
+                txtSoLuotMua.Text = DAL_PhanMem.DemSoLuongDaBan(maPM).ToString();
+                txtSoLuongTonKho.Text = DAL_PhanMem.DemSoLuongTonKho(maPM).ToString();
+                txtTongDoanhThu.Text = DAL_PhanMem.TinhDoanhThu(maPM).ToString();
             }
         }
 

@@ -39,7 +39,6 @@ namespace GUI
             cbxCSDL.DropDown += CbxCSDL_DropDown;
             txtTenTaiKhoan.KeyPress += TxtTenTaiKhoan_KeyPress;
             txtMatKhau.KeyPress += TxtMatKhau_KeyPress;
-            btnTimKiem.Click += BtnTimKiem_Click;
             btnKetNoi.Click += BtnKetNoi_Click;
         }
 

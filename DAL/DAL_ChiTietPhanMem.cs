@@ -19,6 +19,21 @@ namespace DAL
             return DAL_SQL.GetDataContext().KEYPMs.Where(x => x.MAPM == MaPM).ToList();
         }
 
+        public static int Dem(int MaPM)
+        {
+            return DAL_SQL.GetDataContext().KEYPMs.Where(x => x.MAPM == MaPM).ToList().Count();
+        }
+
+        public static int DemKey(int MaPM)
+        {
+            return DAL_SQL.GetDataContext().KEYPMs.Where(x => x.MAPM == MaPM && x.GIATRI != null).ToList().Count();
+        }
+
+        public static int DemTaiKhoan(int MaPM)
+        {
+            return DAL_SQL.GetDataContext().KEYPMs.Where(x => x.MAPM == MaPM && x.TAIKHOAN != null).ToList().Count();
+        }
+
         public static bool Them(KEYPM ctpm)
         {
             try
