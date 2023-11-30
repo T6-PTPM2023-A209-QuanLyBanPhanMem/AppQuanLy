@@ -5,8 +5,14 @@
   - Linq to SQL
   - .NET Framework 4.8
   - Krypton Toolkit
+  - IronXL
+  - ExcelDataReader
+  - CefSharp
 
 ## Chức năng:
-  - Quản lý tài khoản
-  - Quản lý sản phẩm
-  - Quản lý đơn hàng
+  - Quản lý tài khoản quản trị
+  - Quản lý nhà phát hàng
+  - Quản lý loại phần mềm
+  - Quản lý phần mềm
+  - Xem danh sách hóa đơn và ch tiết hóa đơn
+  - Xem danh sách tài khoản người dùng
