@@ -14,5 +14,5 @@
   - Quản lý nhà phát hàng
   - Quản lý loại phần mềm
   - Quản lý phần mềm
-  - Xem danh sách hóa đơn và ch tiết hóa đơn
+  - Xem danh sách hóa đơn và chi tiết hóa đơn
   - Xem danh sách tài khoản người dùng
