@@ -442,6 +442,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnCapNhat.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
             this.btnCapNhat.TabIndex = 1;
             this.btnCapNhat.Values.Text = "Cập nhật";
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnXoa
             // 
@@ -484,6 +485,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnXoa.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Values.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnDoiMa
             // 
@@ -526,6 +528,7 @@ namespace WindowsAppQuanLy.GUI
             this.btnDoiMa.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.DodgerBlue;
             this.btnDoiMa.TabIndex = 3;
             this.btnDoiMa.Values.Text = "Đổi mã";
+            this.btnDoiMa.Click += new System.EventHandler(this.btnDoiMa_Click);
             // 
             // tableLayoutPanel3
             // 
@@ -584,6 +587,7 @@ namespace WindowsAppQuanLy.GUI
             this.txtMaQuanTri.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtMaQuanTri.Location = new System.Drawing.Point(40, 288);
             this.txtMaQuanTri.Name = "txtMaQuanTri";
+            this.txtMaQuanTri.PasswordChar = '*';
             this.txtMaQuanTri.Size = new System.Drawing.Size(293, 39);
             this.txtMaQuanTri.StateCommon.Border.DrawBorders = ((Krypton.Toolkit.PaletteDrawBorders)((((Krypton.Toolkit.PaletteDrawBorders.Top | Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | Krypton.Toolkit.PaletteDrawBorders.Left) 

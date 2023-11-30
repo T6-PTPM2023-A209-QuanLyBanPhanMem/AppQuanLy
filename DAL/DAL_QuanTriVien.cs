@@ -38,7 +38,7 @@ namespace DAL
             {
                 DALDataContext dal = DAL_SQL.GetDataContext();
 
-                if (dal.DANHMUCs.Any(x => x.TEN == "Mã quản trị" && x.GIATRI == MaQuanTri))
+                if (dal.DANHMUCs.Any(x => x.TEN == "MAQUANTRI" && x.GIATRI == MaQuanTri))
                 {
                     dal.TAIKHOAN_QUANTRIs.InsertOnSubmit(tk);
                     dal.SubmitChanges(); return true;
@@ -58,7 +58,7 @@ namespace DAL
             {
                 DALDataContext dal = DAL_SQL.GetDataContext();
 
-                if (dal.DANHMUCs.Any(x => x.TEN == "Mã quản trị" && x.GIATRI == MaQuanTri))
+                if (dal.DANHMUCs.Any(x => x.TEN == "MAQUANTRI" && x.GIATRI == MaQuanTri))
                 {
                     TAIKHOAN_QUANTRI temp = dal.TAIKHOAN_QUANTRIs.FirstOrDefault(e => e.TENTK == tk.TENTK);
                     temp.MATKHAU = tk.MATKHAU;
@@ -80,11 +80,50 @@ namespace DAL
             {
                 DALDataContext dal = DAL_SQL.GetDataContext();
 
-                if (dal.DANHMUCs.Any(x => x.TEN == "Mã quản trị" && x.GIATRI == MaQuanTri))
+                if (dal.DANHMUCs.Any(x => x.TEN == "MAQUANTRI" && x.GIATRI == MaQuanTri))
                 {
                     TAIKHOAN_QUANTRI temp = dal.TAIKHOAN_QUANTRIs.FirstOrDefault(e => e.TENTK == id);
                     dal.TAIKHOAN_QUANTRIs.DeleteOnSubmit(temp);
                     dal.SubmitChanges();
+                    return true;
+                }
+
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static bool DoiMaQuanTri(string MaQuanTriCu, string MaQuanTriMoi)
+        {
+            try
+            {
+                DALDataContext dal = DAL_SQL.GetDataContext();
+
+                if (dal.DANHMUCs.Any(x => x.TEN == "MAQUANTRI" && x.GIATRI == MaQuanTriCu))
+                {
+                    DANHMUC temp = dal.DANHMUCs.FirstOrDefault(x => x.TEN == "MAQUANTRI" && x.GIATRI == MaQuanTriCu);
+                    temp.GIATRI = MaQuanTriMoi;
+                    dal.SubmitChanges();
+                    return true;
+                }
+
+                return false;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static bool KiemTraMaQuanTri(string MaQuanTri)
+        {
+            try
+            {
+                if (DAL_SQL.GetDataContext().DANHMUCs.Any(x => x.TEN == "MAQUANTRI" && x.GIATRI == MaQuanTri))
+                {
                     return true;
                 }
 
