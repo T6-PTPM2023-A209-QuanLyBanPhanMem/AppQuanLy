@@ -154,11 +154,11 @@
           "dependencies": {
             "CefSharp.Common": {
               "target": "Package",
-              "version": "[119.1.20, )"
+              "version": "[119.4.30, )"
             },
             "CefSharp.WinForms": {
               "target": "Package",
-              "version": "[119.1.20, )"
+              "version": "[119.4.30, )"
             },
             "ExcelDataReader": {
               "target": "Package",
@@ -178,6 +178,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
         }
       }
     }

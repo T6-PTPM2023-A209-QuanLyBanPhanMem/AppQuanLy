@@ -1,12 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	<PlatformTarget>AnyCPU</PlatformTarget>
+	<PlatformTarget>x86</PlatformTarget>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <SupportedOSPlatformVersion>10.0.18362.0</SupportedOSPlatformVersion>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="icon.ico" />
+  </ItemGroup>
 
 	<ItemGroup>
 		<Reference Include="System" />
@@ -25,8 +31,8 @@
 
 
 	<ItemGroup>
-    <PackageReference Include="CefSharp.Common" Version="119.1.20" />
-    <PackageReference Include="CefSharp.WinForms" Version="119.1.20" />
+    <PackageReference Include="CefSharp.Common" Version="119.4.30" />
+    <PackageReference Include="CefSharp.WinForms" Version="119.4.30" />
     <PackageReference Include="ExcelDataReader" Version="3.6.0" />
     <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
     <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />

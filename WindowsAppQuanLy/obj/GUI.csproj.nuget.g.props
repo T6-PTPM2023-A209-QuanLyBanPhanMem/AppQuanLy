@@ -13,8 +13,8 @@
     <SourceRoot Include="C:\Users\Nam\.nuget\packages\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)cef.redist.x86\119.1.2\buildTransitive\cef.redist.x86.props" Condition="Exists('$(NuGetPackageRoot)cef.redist.x86\119.1.2\buildTransitive\cef.redist.x86.props')" />
-    <Import Project="$(NuGetPackageRoot)cef.redist.x64\119.1.2\buildTransitive\cef.redist.x64.props" Condition="Exists('$(NuGetPackageRoot)cef.redist.x64\119.1.2\buildTransitive\cef.redist.x64.props')" />
-    <Import Project="$(NuGetPackageRoot)cefsharp.common\119.1.20\buildTransitive\CefSharp.Common.props" Condition="Exists('$(NuGetPackageRoot)cefsharp.common\119.1.20\buildTransitive\CefSharp.Common.props')" />
+    <Import Project="$(NuGetPackageRoot)cef.redist.x86\119.4.3\buildTransitive\cef.redist.x86.props" Condition="Exists('$(NuGetPackageRoot)cef.redist.x86\119.4.3\buildTransitive\cef.redist.x86.props')" />
+    <Import Project="$(NuGetPackageRoot)cef.redist.x64\119.4.3\buildTransitive\cef.redist.x64.props" Condition="Exists('$(NuGetPackageRoot)cef.redist.x64\119.4.3\buildTransitive\cef.redist.x64.props')" />
+    <Import Project="$(NuGetPackageRoot)cefsharp.common\119.4.30\buildTransitive\CefSharp.Common.props" Condition="Exists('$(NuGetPackageRoot)cefsharp.common\119.4.30\buildTransitive\CefSharp.Common.props')" />
   </ImportGroup>
 </Project>

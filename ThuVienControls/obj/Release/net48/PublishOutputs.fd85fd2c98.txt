@@ -1,0 +1,6 @@
+E:\Projects\Visual Studio\WindowsAppQuanLy\T6-PTPM2023-A209-QuanLyBanPhanMem\AppQuanLy\ThuVienControls\bin\Release\net48\publish\CustomControls.dll
+E:\Projects\Visual Studio\WindowsAppQuanLy\T6-PTPM2023-A209-QuanLyBanPhanMem\AppQuanLy\ThuVienControls\bin\Release\net48\publish\CustomControls.pdb
+E:\Projects\Visual Studio\WindowsAppQuanLy\T6-PTPM2023-A209-QuanLyBanPhanMem\AppQuanLy\ThuVienControls\bin\Release\net48\publish\Firebase.Storage.dll
+E:\Projects\Visual Studio\WindowsAppQuanLy\T6-PTPM2023-A209-QuanLyBanPhanMem\AppQuanLy\ThuVienControls\bin\Release\net48\publish\Krypton.Toolkit.dll
+E:\Projects\Visual Studio\WindowsAppQuanLy\T6-PTPM2023-A209-QuanLyBanPhanMem\AppQuanLy\ThuVienControls\bin\Release\net48\publish\Newtonsoft.Json.dll
+E:\Projects\Visual Studio\WindowsAppQuanLy\T6-PTPM2023-A209-QuanLyBanPhanMem\AppQuanLy\ThuVienControls\bin\Release\net48\publish\System.Diagnostics.DiagnosticSource.dll

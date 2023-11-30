@@ -2,6 +2,6 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.data.sqlclient.sni\5.1.0\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.data.sqlclient.sni\5.1.0\buildTransitive\net462\Microsoft.Data.SqlClient.SNI.targets')" />
-    <Import Project="$(NuGetPackageRoot)cefsharp.common\119.1.20\buildTransitive\CefSharp.Common.targets" Condition="Exists('$(NuGetPackageRoot)cefsharp.common\119.1.20\buildTransitive\CefSharp.Common.targets')" />
+    <Import Project="$(NuGetPackageRoot)cefsharp.common\119.4.30\buildTransitive\CefSharp.Common.targets" Condition="Exists('$(NuGetPackageRoot)cefsharp.common\119.4.30\buildTransitive\CefSharp.Common.targets')" />
   </ImportGroup>
 </Project>
